@@ -4,29 +4,44 @@ import { SiLeetcode } from 'react-icons/si'
 import { FaTelegramPlane } from 'react-icons/fa'
 import {  useEffect, useState } from 'react';
 
-const sendmail =async (form)=>{
+const sendmail =async (form,pos)=>{
 	const response=await fetch("/api/sendmail",{
 		method: "POST",
 		headers: {
 		  "Content-Type": "application/json",
 		},
-		body: JSON.stringify(form),
+		body: JSON.stringify([form,pos]),
 	})
 	if(response.status===200)
 	return true;
 	else
 	return false;
 }
+
+
+
+
+
+
+
 function contact() {
 	const [form,_form] = useState({name:"",email:"",message:""});
 	const [pos,_pos] = useState({long:0,lat:0,head:0,speed:0});
+	useEffect(()=>console.log(pos),[pos])
 	const change = (e)=>{
 		_form({...form,[e.target.name]:e.target.value})
 	}
-	
+	useEffect(()=>{
+		if ("geolocation" in navigator)
+		navigator.geolocation.getCurrentPosition(({coords})=>{
+			console.log(coords);
+			_pos({long:coords.longitude,lat:coords.latitude})
+		})
+	},[])
+
 	const submit =async (e)=>{
 		e.preventDefault();
-		const response = await sendmail(form);
+		const response = await sendmail(form,pos);
 		if(response)
 		window.alert("send message successfully");
 	}
