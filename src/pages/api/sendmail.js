@@ -1,8 +1,8 @@
 const nodemailer = require('nodemailer');
 const sendmail = async (req,res)=>{
-    console.log(req.body)
-    if(req.method!=='POST')
-    res.end();
+  if(req.method!=='POST')
+  res.end();
+  console.log(req.body)
     const response = await send(req.body);
     if(response)
     res.status(200).send(true);
