@@ -81,13 +81,13 @@ function about() {
   return (
     <div className='cont grid grid-cols-6 grid-rows-1 overflow-hidden justify-items-stretch'>
 
-      <div className='p-8 sm:col-start-2 col-start-1 col-span-full flex flex-col items-center overflow-hidden overflow-y-auto'>
+      <div className="p-8 sm:col-start-2 col-start-1 col-span-full flex flex-col items-center overflow-hidden overflow-y-auto">
 
-        <motion.div className='flex flex-col space-y-6 items-center h-fit w-full m-auto py-8'>
+        <motion.div className={barlow.className +' flex flex-col space-y-6 items-center h-fit w-full m-auto py-8'}>
           <span className="text-3xl m-auto ml-0 underline">About</span>
           <Intro />
           <About />
-          <span className="text-3xl m-auto ml-0 underline">Education</span>
+          <span className="text-3xl m-auto ml-0 pt-16 underline">Education</span>
 
           <Education />
 
@@ -145,7 +145,7 @@ const draw = {
     }
   }
 };
-const Education = () => <div className='flex flex-row items-center w-full'>
+const Education = () => <div className='flex flex-row pb-10 items-center w-full'>
   <motion.svg
     initial="hidden"
     whileInView="visible" className=" w-2 h-full">

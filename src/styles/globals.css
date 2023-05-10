@@ -15,7 +15,7 @@
     :root {
       --foreground-rgb: 255, 255, 255;
       --background-rgb: 0,0,0 ;
-      --background-start-rgb: 0, 0, 0;
+      --background-start-rgb: 25, 25, 20;
       --background-end-rgb: 0, 0, 0;
     }
 }
@@ -132,4 +132,8 @@ svg{
 .social > * :hover{
   filter: invert(0.6);
   transition-duration: 0.5s;
+}
+
+.cls{
+  background-color: rgb(26, 26, 26);
 }

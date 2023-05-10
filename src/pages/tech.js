@@ -1,11 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion"
 import { getLocalData } from '../lib/jsonreader';
-import { Overpass } from 'next/font/google'
+import { Barlow } from 'next/font/google'
 import { useState } from "react";
 
 
 
-const overpass = Overpass({ subsets: ['latin'], weight: "700" });
+const barlow = Barlow({ subsets: ['latin'], weight: "400" });
 const tech_cont = {
     hidden: {
         opacity: 0,
@@ -48,7 +48,7 @@ function tech(props) {
         <div className='cont grid grid-cols-6 grid-rows-1'>
             <div className='p-6  sm:col-start-2 col-start-1 col-span-full flex flex-col items-center overflow-hidden overflow-y-auto'>
 
-                <motion.div className='flex flex-col space-y-6 items-center h-fit w-full m-auto py-8'>
+                <motion.div className={barlow.className +` flex flex-col space-y-6 items-center h-fit w-full m-auto py-8`}>
                     <span className="text-3xl m-auto ml-0 underline">Technologies</span>
                     <Techpanel />
                     <span className="text-3xl m-auto ml-0 underline">Experiance</span>
