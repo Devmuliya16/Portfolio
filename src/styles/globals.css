@@ -2,19 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-rgb: 255,255,255;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+  
+@media (prefers-color-scheme: dark) {
+    :root {
+      --foreground-rgb: 255, 255, 255;
+      --background-rgb: 0,0,0 ;
+      --background-start-rgb: 0, 0, 0;
+      --background-end-rgb: 0, 0, 0;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +30,106 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.cont{
+  border: 2px solid rgb(var(--foreground-rgb));
+  position: absolute;
+  inset: 0;
+  margin: 20px;
+}
+
+.bgside{
+  background-color: rgb(var(--background-side));
+  box-shadow: 0 0 5px rgb(var(--shadow));
+}
+
+.list{
+  display: flex ;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+
+.list > a{
+  color: rgb(var(--foreground-rgb));
+  width: 100%;
+  padding: 5px;
+  
+}
+
+.list >a:hover{
+  border-color: blue;
+  transition-duration: 0.5s;
+}
+
+.typewriter{
+  font-family: monospace;
+}
+
+
+@media screen and (max-width: 640px) {
+  .desktop {
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (min-width: 640px) {
+  .desktop{
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+.navbtn{
+  background-color: rgb(var(--foreground-rgb));
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  z-index: 30;
+}
+
+
+svg{
+  fill:rgb(var(--background-rgb))
+}
+
+.imgsvg{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 5.5rem;
+  height: 6rem;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: rgb(var(--foreground-rgb),0.1);
+  padding: 8px;
+}
+
+.darklight{
+  fill:rgb(var(--foreground-rgb));
+  color:rgb(var(--foreground-rgb));
+}
+
+.social{
+  background-color: rgb(var(--background-start-rgb));
+  justify-content: space-around;
+}
+
+.social > * :hover{
+  filter: invert(0.6);
+  transition-duration: 0.5s;
 }

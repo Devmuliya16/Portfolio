@@ -1,0 +1,133 @@
+[
+    {
+        "id": 1,
+        "title": "Shopify",
+        "Link": "https://shopify-now.vercel.app/",
+        "Links": ["https://res.cloudinary.com/dk3dupetz/image/upload/v1683711713/Portfolio/shopify_wchoya.png"],
+        "para":"this project was ment for learning purpose were users can login and explore the products and their price and also have expriace of other online e commerse company websites, list there favourite items on cart and audit them",
+        "image": "/Assets/projects/shopify.png",
+        "about":"full stack online shoping app",
+        "technology": [
+            [
+                "Assets/svg/nextjs.svg",
+                "Next.js"
+            ],
+            [
+                "Assets/svg/nodejs.svg",
+                "Nodejs"
+            ],
+            [
+                "Assets/svg/mongodb.svg",
+                "Mongodb"
+            ],
+            [
+                "Assets/svg/tailwind.svg",
+                "Tailwind"
+            ]
+        ],
+        "Discription": [
+            "Shopify is full stack web application",
+            "Developed using Nextjs and Nodejs on mongodb database technology",
+            "User can create account using ✉️ email id",
+            "Admin ⚙️ panel functionality can handle the content dynamically 🔀",
+            "User can explore the product by navigation or  searching 🔍 in the website",
+            "Admin panel can handle CRUD functionality of products",
+            "User can add his favourite  products to the cart 🛒 after login",
+            "Admin can see all Panding 🔄, Shipped ➡️ and Delivered ✅ products invoice status",
+            "User can generate product invoice 📃 and place order 📌 online"
+        ],
+        "Learnings": [
+            "Admin panel creation for dynamic management",
+            "React chart js library",
+            "Next js routing and api handling",
+            "Product CRUD operations from admin panel"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Talker web",
+        "Link": "https://talker.onrender.com",
+        "Links":["https://res.cloudinary.com/dk3dupetz/image/upload/v1683711710/Portfolio/talker_phtrz4.png"],
+        "para":"Chat globally to all the talker web users with real time experiance and follow them to see their daily status updates, share your feelings with others with the help of awsome status, make group of friend to stay connected from anywhere and anytime, send awsome pictures to others and stay connected forever...",
+        "image": "/Assets/projects/talker.png",
+        "about":"Chat globally with users and share photos",
+        "technology": [
+            [
+                "/Assets/svg/reactjs.svg",
+                "React.js"
+            ],
+            [
+                "Assets/svg/nodejs.svg",
+                "Nodejs"
+            ],
+            [
+                "Assets/svg/mongodb.svg",
+                "Mongodb"
+            ],
+            [
+                "Assets/svg/cloudinary.svg",
+                "Cloudinary"
+            ],
+            [
+                "Assets/svg/tailwind.svg",
+                "Tailwind"
+            ]
+        ],
+        "Discription": [
+            "Talker is full stack web application",
+            "Developed using Reactjs and Nodejs On mongodb and cloudinary database technology",
+            "User can create account using ✉️ email otp varifiacation and use the application",
+            "Account is varified 🔒 with nodemailer`s otp 🔑 varification",
+            "User can interact with others with personal chats 💬 and create groups",
+            "Socket programming provides realtime fetching of the messages 🚀",
+            "User can also send pictures and react with emojis 😃",
+            "User can search 🔍 globally over the platform to find unreachables",
+            "Keep your followers updated about your daily activity by daily status 👀"
+        ],
+        "Learnings": [
+            "User varification using email id and otp",
+            "Complex relational database handelings",
+            "Socket.io applications",
+            "UI designing",
+            "File handling with CRUD functionality",
+            "Website optimization using bundaling"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "I-notebook",
+        "Link": "https://i-notebook.onrender.com",
+        "Links":["https://res.cloudinary.com/dk3dupetz/image/upload/v1683711708/Portfolio/inotebook_alis6d.png"],
+        "image": "/Assets/projects/inotebook.png",
+        "para":"I notebook helps you to organize notes online with all create rewrite undo and delete options user can search required notes and also tag important note to catagorize them",
+        "about":"take and maintain your daily notes online for free",
+        "technology": [
+            [
+                "Assets/svg/reactjs.svg",
+                "React.js"
+            ],
+            [
+                "Assets/svg/nodejs.svg",
+                "Nodejs"
+            ],
+            [
+                "Assets/svg/mongodb.svg",
+                "Mongodb"
+            ]
+        ],
+        "Discription": [
+            "I-notebook is full stack web application",
+            "Developed using Reactjs and Nodejs On mongodb Nosql database technology",
+            "User can Create account to the service with email id and use the application any time",
+            "User's account is secured with JSON webtoken authentication",
+            "User can also delete modify and rename the previously stored notes",
+            "Searching functionality keeps the notes very hendful to find"
+        ],
+        "Learnings": [
+            "Learned first time react js and json webtoken and user authentication",
+            "Password increption of user and verification of it",
+            "Cookies management and database handeling",
+            "Host full-stack web applications"
+        ]
+    }
+]

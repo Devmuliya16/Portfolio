@@ -1,0 +1,52 @@
+[
+    {
+        "time": "2023 - continue",
+        "expr": "Developed e-commerse project shopify",
+        "work":[
+            "Solved more than 250 data structure and algorithm problems in leetcode",
+            "Started learning Advanced java",
+            "Made my digital portfolio website"
+        ]
+    },
+    {
+        "time":"2022 december",
+        "expr":"Developed chat webapp Talker.web as MERN stack project",
+        "work":[
+            "Started learning flutter and dart for android",
+            "Learned python libraries and jupyter notebook for datascience"
+        ]
+    },
+    {
+        "time": "2022 june",
+        "expr": "Became fullstack developer",
+        "work": [
+            "Solved more than 350 Compititve programing problems in codechef and codeforces",
+            "Learned nosql database mongodb",
+            "Reactjs and Nextjs"
+        ]
+    },
+    {
+        "time":"2021 december",
+        "expr":"Explored Git and Github version control tools",
+        "work":[
+            "Learned Java and Mysql", 
+            "Made some website using rest api and venila js"
+        ]
+    },
+    {
+        "time": "2021 june",
+        "expr": "Learned Html css javascript and DSA",
+        "work": [
+            "Started Compititve programing problems in codechef and codeforces",
+            "Learned Data stuctures and stl from c++ and OOP"
+        ]
+    },
+    {
+        "time": "2020 september",
+        "expr": "Got addmission in L.D. college of engineering.",
+        "work": [
+            "Learned first language c and c++ with stl",
+            "Explored web devlopment and compititive programing"
+        ]
+    }
+]
