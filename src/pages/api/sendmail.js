@@ -4,6 +4,7 @@ const sendmail = async (req,res)=>{
   res.end();
   console.log(req.body)
     const response = await send(req.body);
+    console.log(response);
     if(response)
     res.status(200).send(response);
     
