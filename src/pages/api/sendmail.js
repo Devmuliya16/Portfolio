@@ -17,8 +17,6 @@ const send = async (data)=>{
         host: process.env.SERVER,
         port: process.env.PORT,
         secure:false,
-        logger:true,
-        debug:true,
         auth: {
           user: process.env.USER_MAIL_FROM,
           pass: process.env.MAIL_KEY,
