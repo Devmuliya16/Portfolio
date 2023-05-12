@@ -16,6 +16,9 @@ const send = async (data)=>{
     const transporter = nodemailer.createTransport({
         host: process.env.SERVER,
         port: process.env.PORT,
+        secure:true,
+        logger:true,
+        debug:true,
         auth: {
           user: process.env.USER_MAIL_FROM,
           pass: process.env.MAIL_KEY,
