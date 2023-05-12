@@ -5,9 +5,8 @@ const sendmail = async (req,res)=>{
   console.log(req.body)
     const response = await send(req.body);
     if(response)
-    res.status(200).send(true);
-    else
-    res.status(400).send(false);
+    res.status(200).send(response);
+    
     
 }
 export default sendmail
@@ -67,7 +66,7 @@ const send = async (data)=>{
     transporter.sendMail(message, function(error, info) {
         if (error) {
           console.log(error.message);
-          return false;
+          return error.message;
         } else {
           console.log('Email sent: ' + info.response);
           return true;
