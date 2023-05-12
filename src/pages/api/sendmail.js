@@ -15,11 +15,15 @@ export default sendmail
 const send = async (data)=>{
     const transporter = nodemailer.createTransport({
         host: process.env.SERVER,
-        port: process.env.PORT,
-        secure:false,
+        port: 465,
+        secure: true,
+        secureConnection: false,
         auth: {
           user: process.env.USER_MAIL_FROM,
           pass: process.env.MAIL_KEY,
+        },
+        tls:{
+          rejectUnAuthorized:true
         }
       });
 
@@ -51,11 +55,11 @@ const send = async (data)=>{
       </head>
         <body>
           <h1>New Message</h1>
-          <p><strong>Name: </strong> ${ data[0].name}</p>
-          <p><strong>Email: </strong> ${ data[0].email }</p>
-          <p><strong>Message: </strong> ${ data[0].message }</p>
-          <p><strong>Longitude: </strong> ${ data[1].long }</p>
-          <p><strong>Latitude: </strong> ${ data[1].lat }</p>
+          <p><strong>Name: </strong> ${data[0].name}</p>
+          <p><strong>Email: </strong> ${data[0].email }</p>
+          <p><strong>Message: </strong> ${data[0].message }</p>
+          <p><strong>Longitude: </strong> ${data[1].long }</p>
+          <p><strong>Latitude: </strong> ${data[1].lat }</p>
         
         </body>
       </html>`
