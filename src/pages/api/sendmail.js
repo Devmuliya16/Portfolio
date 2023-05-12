@@ -61,7 +61,7 @@ const send = async (data)=>{
     }
     transporter.sendMail(message, function(error, info) {
         if (error) {
-          console.log(error);
+          console.log(error.message);
           return false;
         } else {
           console.log('Email sent: ' + info.response);
