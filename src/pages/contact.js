@@ -12,10 +12,7 @@ const sendmail =async (form,pos)=>{
 		},
 		body: JSON.stringify([form,pos]),
 	})
-	if(response.status===200)
-	return true;
-	else
-	return false;
+	return await response.json();
 }
 
 
@@ -27,23 +24,25 @@ const sendmail =async (form,pos)=>{
 function contact() {
 	const [form,_form] = useState({name:"",email:"",message:""});
 	const [pos,_pos] = useState({long:0,lat:0,head:0,speed:0});
-	useEffect(()=>console.log(pos),[pos])
+	const [sending,_sending] = useState(false);
+
+	
 	const change = (e)=>{
 		_form({...form,[e.target.name]:e.target.value})
 	}
 	useEffect(()=>{
 		if ("geolocation" in navigator)
 		navigator.geolocation.getCurrentPosition(({coords})=>{
-			console.log(coords);
 			_pos({long:coords.longitude,lat:coords.latitude})
 		})
 	},[])
 
 	const submit =async (e)=>{
 		e.preventDefault();
+		_sending(true);
 		const response = await sendmail(form,pos);
-		if(response)
-		window.alert("send message successfully");
+		_sending(false);
+		window.alert(response.message);
 	}
 	return (
 		<div className='cont grid grid-cols-6 grid-rows-1'>
@@ -77,7 +76,10 @@ function contact() {
 								<span className="mb-1">Message</span>
 								<textarea name="message" value={form.message} onChange={change} rows="4" className="outline-none bg-transparent border-[1px] p-4 w-full shadow-lg rounded-md focus:ring-4 focus:ring-opacity-75 focus:ring-blue-800" required/>
 							</label>
-							<button type="submit" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700  rounded-lg hover:bg-blue-900 w-fit m-auto">Submit</button>
+							<button disabled={sending} type="submit" className="inline-flex justify-center items-center px-3 py-2 text-sm font-medium text-white bg-blue-700  rounded-lg hover:bg-blue-900  w-2/6 m-auto disabled:opacity-60">
+								{!sending && "Submit"}
+								{sending && <Loader/>}
+							</button>
 						</form>
 					</div>
 
@@ -94,3 +96,5 @@ function contact() {
 }
 
 export default contact
+
+const Loader = ()=> <div className='animate-spin border-l-white border-transparent border-2 rounded-full w-6 h-6'></div>

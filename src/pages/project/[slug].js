@@ -5,8 +5,7 @@ import { useState } from "react";
 
 function slug({ data }) {
     const [project, _project] = useState(data[useRouter().query.slug]);
-    const [index,_index] = useState(useRouter().query.slug);
-    console.log(index)
+
 
     return (
         <div className='cont grid grid-cols-6 grid-rows-1'>
@@ -15,7 +14,7 @@ function slug({ data }) {
                 <motion.div className='flex flex-col space-y-6  items-center h-fit w-full flex-wrap m-auto py-8'>
                     <div className="max-w-2xl  py-16 mx-auto space-y-12">
                         <div className="space-y-4">
-                        <img src={project.Links[0]}/>
+                            <img src={project.Links[0]} />
                             <h1 className="text-4xl font-bold md:tracking-tight md:text-5xl">{project.title}</h1>
                             <h1 className="text-xl font-bold md:tracking-tight md:text-5xl"></h1>
                             <div className="flex flex-col items-start justify-between w-full md:flex-row md:items-center dark:text-gray-400">
@@ -29,43 +28,38 @@ function slug({ data }) {
                             </div>
                             <div className="flex flex-wrap py-6 space-x-2 border-t border-dashed dark:border-gray-400">
                                 {
-                                    project.technology.map((tech,ind) => <button key={ind} className='m-1 p-1 border-[1px] text-sm rounded-lg '>
+                                    project.technology.map((tech, ind) => <button key={ind} className='m-1 p-1 border-[1px] text-sm rounded-lg '>
 
                                         {'#' + tech[1]}</button>)
                                 }
                             </div>
                         </div>
-                        
-                            <div className=" overflow-hidden rounded-lg ">
-                         
-                                    <h2 className="text-3xl font-bold">{project.about}</h2>
-                                    <p className="mt-4 dark:text-gray-400">{project.para}</p>
-                                    <div className="mt-4 dark:text-gray-400">
-                                        <h1 className="mt-4 text-3xl font-semibold dark:text-white">Features</h1>
 
-                                        {
-                                            project.Discription.map((line, ind) => {
-                                                return <li key={ind}>{line}</li>
-                                            })
-                                        }
-                                        <h1 className="mt-4 text-3xl font-semibold dark:text-white">Learnings</h1>
+                        <div className=" overflow-hidden rounded-lg ">
 
-                                        {
-                                            project.Learnings.map((line, ind) => {
-                                                return <li key={ind}>{line}</li>
-                                            })
-                                        }
-                                    </div>
-                                
+                            <h2 className="text-3xl font-bold">{project.about}</h2>
+                            <p className="mt-4 dark:text-gray-400">{project.para}</p>
+                            <div className="mt-4 dark:text-gray-400">
+                                <h1 className="mt-4 text-3xl font-semibold dark:text-white">Features</h1>
+
+                                {
+                                    project.Discription.map((line, ind) => {
+                                        return <li key={ind}>{line}</li>
+                                    })
+                                }
+                                <h1 className="mt-4 text-3xl font-semibold dark:text-white">Learnings</h1>
+
+                                {
+                                    project.Learnings.map((line, ind) => {
+                                        return <li key={ind}>{line}</li>
+                                    })
+                                }
                             </div>
-                       
-
+                        </div>
                         <div>
-
-
                         </div>
                     </div>
-                  
+
                 </motion.div>
 
             </div>

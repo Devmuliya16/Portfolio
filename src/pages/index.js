@@ -1,5 +1,3 @@
-
-import Panel from '../../components/Navigation/panel'
 import Typewriter from 'typewriter-effect';
 import { AnimatePresence, motion } from 'framer-motion'
 import { Zilla_Slab_Highlight } from 'next/font/google';
@@ -98,7 +96,7 @@ export async function getServerSideProps() {
     const response = await fetch("https://zenquotes.io/api/quotes");
     data = await response.json();
   } catch (e) {
-    console.log("error");
+    console.log("quote fetch error");
   }
 
 
