@@ -143,6 +143,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </motion.div>
     </AnimatePresence>
+    <span className='dark:text-gray-600 text-gray-400 text-sm fixed right-4 bottom-1'>&#169;2023 Muliya Dev. All rights reserved.</span>
   </>
 }
 

@@ -60,9 +60,9 @@ function contact() {
 					<div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
 						<div className="sm:py-6 md:py-0 md:px-6">
 							<h1 className="text-4xl font-bold">Get in touch</h1>
-							<p className="pt-2 pb-4">Fill in the form to start a conversation</p>
+							<p className="pt-2 pb-4">Fill in the form to start a conversation with Muliya Dev</p>
 							<div className="space-y-4 ">
-								<li className='flex space-x-4 hover:underline'><AiFillLinkedin className='invert text-2xl' /><a href='https://www.linkedin.com/in/dev-muliya'>  Linkedin</a></li>
+								<li className='flex space-x-4 hover:underline'><AiFillLinkedin className='invert text-2xl' /><a href='https://www.linkedin.com/in/dev-muliya'>Linkedin</a></li>
 								<li className='flex space-x-4 hover:underline'><AiFillGithub className='invert text-2xl' /><a href='https://github.com/Devmuliya16'>Github</a></li>
 								<li className='flex space-x-4 hover:underline'><FaTelegramPlane className='invert text-2xl' /><a href='https://telegram.me/Devmuliya'>Telegram</a></li>
 								<li className='flex space-x-4 hover:underline'><SiLeetcode className='invert text-2xl' /><a href='https://leetcode.com/Muliya_Dev'>Leetcode</a></li>
