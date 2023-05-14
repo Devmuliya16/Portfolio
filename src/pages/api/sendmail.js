@@ -7,6 +7,20 @@ const sendmail = async (req, res) => {
     return;
   }
 
+  const transporter = nodemailer.createTransport({
+    host: process.env.SERVER,
+    port: 465,
+    secure: true,
+    secureConnection: false,
+    auth: {
+      user: process.env.USER_MAIL_FROM,
+      pass: process.env.MAIL_KEY,
+    },
+    tls: {
+      rejectUnAuthorized: true
+    }
+  });
+
   const message = getmessage(req.body,req.connection.remoteAddress);
   const info = await transporter.sendMail(message);
   if(info.accepted[0]){
@@ -20,26 +34,17 @@ const sendmail = async (req, res) => {
 export default sendmail
 
 
+const getText = (data,ip) =>{
+  return `Message from portfolio website \nSender: ${data[0].name} \nEmail: ${data[0].email} \nMessage: ${data[0].message} \nLongitude: ${data[1].long} \nLatitude: ${data[i].lat} \nIp Address: ${ip} \n`
+}
 
-const transporter = nodemailer.createTransport({
-  host: process.env.SERVER,
-  port: 465,
-  secure: true,
-  secureConnection: false,
-  auth: {
-    user: process.env.USER_MAIL_FROM,
-    pass: process.env.MAIL_KEY,
-  },
-  tls: {
-    rejectUnAuthorized: true
-  }
-});
 
 const getmessage = (data,ip) => {
   return {
     from: process.env.USER_MAIL_FROM,
     to: process.env.USER_MAIL_TO,
     subject: 'Portfolio contact from ' + data[0].name,
+    text: getText(data,ip),
     html: `<html>
   <head>
   <style>
