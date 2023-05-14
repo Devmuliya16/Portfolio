@@ -1,6 +1,7 @@
 import Typewriter from 'typewriter-effect';
 import { AnimatePresence, motion } from 'framer-motion'
 import { Zilla_Slab_Highlight } from 'next/font/google';
+import Head from 'next/head';
 
 const dancingScript = Zilla_Slab_Highlight({ subsets: ['latin'], weight: "700" });
 const list = {
@@ -37,6 +38,9 @@ export default function Home(props) {
 
   return (
     <>
+      <Head>
+        <title>Muliya Dev - home</title>
+      </Head>
       <div className='cont grid grid-cols-6 grid-rows-1 overflow-hidden justify-items-stretch'>
        
         <div className='p-8 sm:col-start-2 col-start-1 col-span-full flex flex-col items-center overflow-hidden overflow-y-auto'>

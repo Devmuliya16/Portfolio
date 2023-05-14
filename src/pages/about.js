@@ -1,6 +1,7 @@
 
 import { Barlow } from 'next/font/google'
 import { motion } from 'framer-motion'
+import Head from 'next/head';
 
 const barlow = Barlow({ subsets: ['latin'], weight: "400" });
 
@@ -79,6 +80,10 @@ const para_child = {
 
 function about() {
   return (
+    <>
+    <Head>
+      <title>Muliya Dev - about</title>
+    </Head>
     <div className='cont grid grid-cols-6 grid-rows-1 overflow-hidden justify-items-stretch'>
 
       <div className="p-8 sm:col-start-2 col-start-1 col-span-full flex flex-col items-center overflow-hidden overflow-y-auto">
@@ -95,6 +100,7 @@ function about() {
         </motion.div>
       </div>
     </div>
+    </>
   )
 }
 export default about

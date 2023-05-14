@@ -1,11 +1,16 @@
 import {motion} from "framer-motion"
 import { getLocalData } from '../lib/jsonreader2';
 import Project from "../../components/Project";
+import Head from "next/head";
 
 
 
 function projects(props) {
   return (
+    <>
+    <Head>
+      <title>Muliya Dev - projects</title>
+    </Head>
     <div className='cont grid grid-cols-6 grid-rows-1'>
             <div className='p-6  sm:col-start-2 col-start-1 col-span-full flex flex-col  overflow-hidden overflow-y-auto'>
 
@@ -25,6 +30,7 @@ function projects(props) {
 
             </div>
         </div>
+        </>
   )
 }
 

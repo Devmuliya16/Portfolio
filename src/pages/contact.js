@@ -3,6 +3,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { SiLeetcode } from 'react-icons/si'
 import { FaTelegramPlane } from 'react-icons/fa'
 import {  useEffect, useState } from 'react';
+import Head from 'next/head';
 
 const sendmail =async (form,pos)=>{
 	const response=await fetch("/api/sendmail",{
@@ -45,6 +46,11 @@ function contact() {
 		window.alert(response.message);
 	}
 	return (
+		<>
+		<Head>
+			<title>Muliya Dev - contact</title>
+		</Head>
+	
 		<div className='cont grid grid-cols-6 grid-rows-1'>
 
 			<div className='sm:col-start-2 col-start-1 col-span-full flex flex-col items-center overflow-hidden overflow-y-auto'>
@@ -92,6 +98,7 @@ function contact() {
 
 
 		</div>
+		</>
 	)
 }
 
