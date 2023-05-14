@@ -35,7 +35,7 @@ export default sendmail
 
 
 const getText = (data,ip) =>{
-  return `Message from portfolio website \nSender: ${data[0].name} \nEmail: ${data[0].email} \nMessage: ${data[0].message} \nLongitude: ${data[1].long} \nLatitude: ${data[i].lat} \nIp Address: ${ip} \n`
+  return `Message from portfolio website \nSender: ${data[0].name} \nEmail: ${data[0].email} \nMessage: ${data[0].message} \nLongitude: ${data[1].long} \nLatitude: ${data[1].lat} \nIp Address: ${ip} \n`
 }
 
 
