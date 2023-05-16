@@ -104,7 +104,7 @@ export default function App({ Component, pageProps }) {
       <meta name="language" content="English" />
       <meta name="revisit-after" content="2 days" />
       <meta name="author" content="Muliya dev" />
-
+      <meta name="google-site-verification" content="xPaNge4witobVyvPMO7N4EAALEerD8-6i0rAGgbZRNc" />
       {/* Facebook Meta Tags */}
   <meta property="og:url" content="https://devmuliya.vercel.app/"/>
   <meta property="og:type" content="website"/>
