@@ -109,7 +109,7 @@ export default about
 
 
 const Intro = () => <motion.div variants={name_cont} initial="hidden" animate="visible" className="grid grid-cols-2 grid-rows-1 justify-center">
-  <motion.img variants={profile} src="Assets/profile.jpg" className="rounded-full sm:w-1/2 w-4/6 mr-4 m-auto aspect-square" />
+  <motion.img variants={profile} src="Assets/profile.jpg" alt="muliya dev profile" className="rounded-full sm:w-1/2 w-4/6 mr-4 m-auto aspect-square" />
   <motion.span variants={head} className="text-[8vw] md:text-[6vw] w-full inline-block m-auto">I`M <motion.span variants={name} className="text-blue-800">DEV MULIYA</motion.span>
   </motion.span></motion.div>
 

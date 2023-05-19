@@ -97,8 +97,8 @@ export default function App({ Component, pageProps }) {
       />
       <link rel="shortcut icon" href="/favicon.ico" />
       <meta name="title" content="Dev Muliya" />
-      <meta name="description" content="I'm computer engineer and full stack developer, explore my profile , projects here and contact me to discuss potential collaborations and projects." />
-      <meta name="keywords" content="dev,muliya,muliya dev,Dev Muliya, Dev, computer,engineer,gujarat,india,website,contact,developer,l.d. collenge, ahmedabad, profile, search, online, web, computer engineer,linkedin,instagram, portfoilo, projects, github" />
+      <meta name="description" content="I'm Muliya Dev computer engineer and full stack developer, explore my projects here and contact me to discuss potential collaborations and projects." />
+      <meta name="keywords" content="dev, muliya, muliya dev, Dev Muliya, Dev, computer, engineer, gujarat, india, website, contact, developer, l.d. collenge, ahmedabad, profile, search, online, web, computer engineer, linkedin, instagram, portfoilo, projects, github" />
       <meta name="robots" content="index, follow" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="English" />
@@ -120,9 +120,6 @@ export default function App({ Component, pageProps }) {
   <meta name="twitter:description" content="Dev Muliya Profile & Portfolio"/>
   <meta name="twitter:image" content="https://res.cloudinary.com/dk3dupetz/image/upload/v1683987359/Portfolio/Dev_preloader_xxuziz.jpg"/>
 
-  
-        
-   
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:image" content="https://res.cloudinary.com/dk3dupetz/image/upload/v1683987359/Portfolio/Dev_preloader_xxuziz.jpg" />
     <meta
