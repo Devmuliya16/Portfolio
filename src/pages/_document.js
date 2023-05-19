@@ -1,13 +1,10 @@
-import { Html,  Main, NextScript } from 'next/document'
+import { Html,Head,  Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
     <Html lang="en">
         <Head>
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-      />
+     
       <link rel="shortcut icon" href="/favicon.ico" />
       <meta name="title" content="Dev Muliya" />
       <meta name="description" content="I'm Muliya Dev computer engineer and full stack developer, explore my projects here and contact me to discuss potential collaborations and projects." />
@@ -33,13 +30,13 @@ export default function Document() {
   <meta name="twitter:description" content="Dev Muliya Profile & Portfolio"/>
   <meta name="twitter:image" content="https://res.cloudinary.com/dk3dupetz/image/upload/v1683987359/Portfolio/Dev_preloader_xxuziz.jpg"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
     <meta property="og:image" content="https://res.cloudinary.com/dk3dupetz/image/upload/v1683987359/Portfolio/Dev_preloader_xxuziz.jpg" />
     <meta
       name="Muliya Dev"
       content="Dev Muliya Profile & Portfolio"
     />
-    <title>Muliya Dev</title>
+   
     </Head>
       <body >
         <Main/>

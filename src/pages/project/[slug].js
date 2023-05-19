@@ -19,7 +19,7 @@ function slug({ data }) {
                             <h1 className="text-xl font-bold md:tracking-tight md:text-5xl"></h1>
                             <div className="flex flex-col items-start justify-between w-full md:flex-row md:items-center dark:text-gray-400">
                                 <div className="flex items-center md:space-x-2">
-                                    <img src="https://source.unsplash.com/75x75/?portrait" alt="" className="w-4 h-4 border rounded-full dark:bg-gray-500 dark:border-gray-700" />
+                                    <img src="/Assets/profile.jpg" alt="Muliya Dev profile picture" className="w-4 h-4 border rounded-full dark:bg-gray-500 dark:border-gray-700" />
                                     <p className="text-sm">Muliya Dev • May 5th, 2023</p>
                                 </div>
                                 <a href={project.Link} target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700  rounded-lg hover:bg-blue-900">
