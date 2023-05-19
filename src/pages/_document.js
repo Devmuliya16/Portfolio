@@ -3,7 +3,7 @@ import { Html,  Main, NextScript } from 'next/document'
 export default function Document() {
   return (
     <Html lang="en">
-        <Head>
+        <header>
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
@@ -40,7 +40,7 @@ export default function Document() {
       content="Dev Muliya Profile & Portfolio"
     />
     <title>Muliya Dev</title>
-    </Head>
+    </header>
       <body >
         <Main/>
         <NextScript />
