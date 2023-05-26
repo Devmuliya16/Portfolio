@@ -96,7 +96,7 @@ export default function App({ Component, pageProps }) {
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
       />
-      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.ico" />
       <meta name="title" content="Dev Muliya" />
       <meta name="description" content="I'm Muliya Dev computer engineer and full stack developer, explore my projects here and contact me to discuss potential collaborations and projects." />
       <meta name="keywords" content="dev, muliya, muliya dev, Dev Muliya, Dev, computer, engineer, gujarat, india, website, contact, developer, l.d. collenge, ahmedabad, profile, search, online, web, computer engineer, linkedin, instagram, portfoilo, projects, github" />
