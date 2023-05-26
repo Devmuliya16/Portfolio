@@ -152,7 +152,6 @@ const Loader = () => <motion.div
 
   initial={{ scale: 0 }}
   animate={{ scale: 1 }}
-
   className='w-8 h-8 fixed right-10 bottom-10 rounded-full border-4 border-transparent border-r-blue-900 border-t-blue-900 animate-spin'></motion.div>
 
 
