@@ -10,6 +10,7 @@ import { useState, useEffect } from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { SiLeetcode } from 'react-icons/si'
 import { FaTelegramPlane } from 'react-icons/fa'
+import {Analytics} from '@vercel/analytics/react'
 
 
 const list = {
@@ -106,27 +107,27 @@ export default function App({ Component, pageProps }) {
       <meta name="author" content="Muliya dev" />
       <meta name="google-site-verification" content="xPaNge4witobVyvPMO7N4EAALEerD8-6i0rAGgbZRNc" />
       {/* Facebook Meta Tags */}
-  <meta property="og:url" content="https://devmuliya.vercel.app/"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Muliya Dev"/>
-  <meta property="og:description" content="Dev Muliya Profile & Portfolio"/>
-  <meta property="og:image" content="https://res.cloudinary.com/dk3dupetz/image/upload/v1683987359/Portfolio/Dev_preloader_xxuziz.jpg"/>
+      <meta property="og:url" content="https://devmuliya.vercel.app/" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Muliya Dev" />
+      <meta property="og:description" content="Dev Muliya Profile & Portfolio" />
+      <meta property="og:image" content="https://res.cloudinary.com/dk3dupetz/image/upload/v1683987359/Portfolio/Dev_preloader_xxuziz.jpg" />
 
-  {/*  Twitter Meta Tags  */}
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta property="twitter:domain" content="talker.onrender.com"/>
-  <meta property="twitter:url" content="https://devmuliya.vercel.app/"/>
-  <meta name="twitter:title" content="Muliya Dev"/>
-  <meta name="twitter:description" content="Dev Muliya Profile & Portfolio"/>
-  <meta name="twitter:image" content="https://res.cloudinary.com/dk3dupetz/image/upload/v1683987359/Portfolio/Dev_preloader_xxuziz.jpg"/>
+      {/*  Twitter Meta Tags  */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:domain" content="talker.onrender.com" />
+      <meta property="twitter:url" content="https://devmuliya.vercel.app/" />
+      <meta name="twitter:title" content="Muliya Dev" />
+      <meta name="twitter:description" content="Dev Muliya Profile & Portfolio" />
+      <meta name="twitter:image" content="https://res.cloudinary.com/dk3dupetz/image/upload/v1683987359/Portfolio/Dev_preloader_xxuziz.jpg" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:image" content="https://res.cloudinary.com/dk3dupetz/image/upload/v1683987359/Portfolio/Dev_preloader_xxuziz.jpg" />
-    <meta
-      name="Muliya Dev"
-      content="Dev Muliya Profile & Portfolio"
-    />
-    <title>Muliya Dev</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta property="og:image" content="https://res.cloudinary.com/dk3dupetz/image/upload/v1683987359/Portfolio/Dev_preloader_xxuziz.jpg" />
+      <meta
+        name="Muliya Dev"
+        content="Dev Muliya Profile & Portfolio"
+      />
+      <title>Muliya Dev</title>
     </Head>
     <Script src='/script.js' />
 
@@ -138,6 +139,7 @@ export default function App({ Component, pageProps }) {
     <AnimatePresence mode='wait'>
       <motion.div exit={{ opacity: 0 }} key={useRouter().asPath}>
         <Component {...pageProps} />
+        <Analytics/>
       </motion.div>
     </AnimatePresence>
     <span className='dark:text-gray-600 text-gray-400 text-sm fixed right-4 bottom-1'>&#169;2023 Muliya Dev. All rights reserved.</span>
