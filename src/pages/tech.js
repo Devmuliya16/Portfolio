@@ -105,12 +105,14 @@ const Techpanel = () => <motion.div variants={tech_cont} initial="hidden" whileI
         <li className="text-blue-400">Framework & Database</li>
         <div className="flex flex-row items-center flex-wrap overflow-hidden mb-4">
             <motion.div variants={card} className="imgsvg"><img src="Assets/svg/tailwind.svg"></img><div className="text-center">Tailwind</div></motion.div>
+            <motion.div variants={card} div className="imgsvg"><img src="Assets/svg/framermotion.svg"></img><div className="text-center">Framer</div></motion.div>
             <motion.div variants={card} className="imgsvg"><img src="Assets/svg/reactjs.svg"></img><div className="text-center">Reactjs</div></motion.div>
             <motion.div variants={card} className="imgsvg"><img src="Assets/svg/nextjs.svg"></img><div className="text-center">Nextjs</div></motion.div>
             <motion.div variants={card} className="imgsvg"><img src="Assets/svg/express.svg"></img><div className="text-center">Express</div></motion.div>
             <motion.div variants={card} className="imgsvg"><img src="Assets/svg/nodejs.svg"></img><div className="text-center">Nodejs</div></motion.div>
             <motion.div variants={card} className="imgsvg"><img src="Assets/svg/flutter.svg"></img><div className="text-center">Flutter</div></motion.div>
             <motion.div variants={card} className="imgsvg"><img src="Assets/svg/mongodb.svg"></img><div className="text-center">MongoDB</div></motion.div>
+            <motion.div variants={card} className="imgsvg"><img src="Assets/svg/firebase.svg"></img><div className="text-center">Firebase</div></motion.div>
             <motion.div variants={card} className="imgsvg"><img src="Assets/svg/mysql.svg"></img><div className="text-center">MySql</div></motion.div>
         </div>
         <li className="text-blue-400">Development tools</li>

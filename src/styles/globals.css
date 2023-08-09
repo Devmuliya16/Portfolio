@@ -137,3 +137,8 @@ svg{
 .cls{
   background-color: rgb(26, 26, 26);
 }
+
+
+ul {
+  list-style-position: outside;
+}

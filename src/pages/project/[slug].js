@@ -2,6 +2,7 @@ import { useRouter } from "next/router"
 import { motion } from "framer-motion"
 import { getLocalData } from '../../lib/jsonreader2';
 import { useState } from "react";
+import Swipers from "../../../components/Swipers";
 
 function slug({ data }) {
     const [project, _project] = useState(data[useRouter().query.slug]);
@@ -15,6 +16,7 @@ function slug({ data }) {
                     <div className="max-w-2xl  py-16 mx-auto space-y-12">
                         <div className="space-y-4">
                             <img src={project.Links[0]} />
+                            {/* <Swipers images={project.Links}/> */}
                             <h1 className="text-4xl font-bold md:tracking-tight md:text-5xl">{project.title}</h1>
                             <h1 className="text-xl font-bold md:tracking-tight md:text-5xl"></h1>
                             <div className="flex flex-col items-start justify-between w-full md:flex-row md:items-center dark:text-gray-400">
@@ -76,3 +78,4 @@ export async function getServerSideProps() {
         props: { data }
     }
 }
+
