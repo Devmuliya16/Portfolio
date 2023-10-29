@@ -32,7 +32,7 @@ function panel() {
         <Link href="/tech" className={`${useRouter().asPath=='/tech'&& active} hover:border-blue-800 border-l-4 text-white`}><motion.li variants={item} >Technologies</motion.li></Link>
         <Link href="/projects" className={`${useRouter().asPath=='/projects'&& active} hover:border-blue-800 border-l-4 text-white`}><motion.li variants={item} >Projects</motion.li></Link>
         <Link href="/contact" className={`${useRouter().asPath=='/contact'&& active} hover:border-blue-800 border-l-4 text-white`}><motion.li variants={item} >Contact</motion.li></Link>
-        <Link href="/" className={`${useRouter().asPath=='/resume'&& active} hover:border-blue-800 border-l-4 text-white`}><motion.li variants={item} >Resume</motion.li></Link>
+        <Link href="/resume" className={`${useRouter().asPath=='/resume'&& active} hover:border-blue-800 border-l-4 text-white`}><motion.li variants={item} >Resume</motion.li></Link>
         </ul>
         
        </motion.div>

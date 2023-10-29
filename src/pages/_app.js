@@ -76,14 +76,14 @@ export default function App({ Component, pageProps }) {
 
 
 
-  const Pages = () => <div className="absolute inset-0 z-20 w-full backdrop-blur-md grid justify-center">
+  const Pages = () => <div className="absolute inset-0 z-20 w-full backdrop-blur-md backdrop-brightness-75 grid justify-center">
     <motion.ol key={'nav'} variants={list} initial="hidden" animate="visible" className='m-auto list-decimal flex flex-col space-y-6 text-2xl'>
       <motion.li variants={item} onClick={settoggle}><Link href="/">Home</Link></motion.li>
       <motion.li variants={item} onClick={settoggle}><Link href="/about">About</Link></motion.li>
       <motion.li variants={item} onClick={settoggle}><Link href="/tech">Technologies</Link></motion.li>
       <motion.li variants={item} onClick={settoggle}><Link href="/projects">Projects</Link></motion.li>
       <motion.li variants={item} onClick={settoggle}><Link href="/contact">Contact</Link></motion.li>
-      <motion.li variants={item} onClick={settoggle}><Link href="/">Resume</Link></motion.li>
+      <motion.li variants={item} onClick={settoggle}><Link href="/resume">Resume</Link></motion.li>
     </motion.ol>
 
   </div>
