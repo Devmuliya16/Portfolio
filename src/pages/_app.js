@@ -127,7 +127,7 @@ export default function App({ Component, pageProps }) {
         name="Muliya Dev"
         content="Dev Muliya Profile & Portfolio"
       />
-      <title>Muliya Dev</title>
+      <title>Dev Muliya</title>
     </Head>
     <Script src='/script.js' />
 

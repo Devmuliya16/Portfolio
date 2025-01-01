@@ -82,7 +82,7 @@ function about() {
   return (
     <>
     <Head>
-      <title>Muliya Dev - about</title>
+      <title>Dev Muliya - about</title>
     </Head>
     <div className='cont grid grid-cols-6 grid-rows-1 overflow-hidden justify-items-stretch'>
 

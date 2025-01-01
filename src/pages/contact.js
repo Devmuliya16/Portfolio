@@ -48,7 +48,7 @@ function contact() {
 	return (
 		<>
 		<Head>
-			<title>Muliya Dev - contact</title>
+			<title>Dev Muliya - contact</title>
 		</Head>
 	
 		<div className='cont grid grid-cols-6 grid-rows-1'>

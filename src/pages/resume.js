@@ -5,7 +5,7 @@ function resume() {
 	return (
 		<>
 			<Head>
-				<title>Muliya Dev - resume</title>
+				<title>Dev Muliya - resume</title>
 			</Head>
 
 			<div className='cont grid grid-cols-6 grid-rows-1'>

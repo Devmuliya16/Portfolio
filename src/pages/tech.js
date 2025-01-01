@@ -48,7 +48,7 @@ function tech(props) {
     return (
         <>
         <Head>
-            <title>Muliya Dev - experiance</title>
+            <title>Dev Muliya - experiance</title>
         </Head>
         <div className='cont grid grid-cols-6 grid-rows-1'>
             <div className='p-6  sm:col-start-2 col-start-1 col-span-full flex flex-col items-center overflow-hidden overflow-y-auto'>

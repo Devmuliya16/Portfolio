@@ -39,7 +39,7 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>Muliya Dev - home</title>
+        <title>Dev Muliya - home</title>
       </Head>
       <div className='cont grid grid-cols-6 grid-rows-1 overflow-hidden justify-items-stretch'>
        
