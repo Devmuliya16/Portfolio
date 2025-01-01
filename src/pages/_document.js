@@ -7,8 +7,8 @@ export default function Document() {
 
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="title" content="Dev Muliya" />
-        <meta name="description" content="I'm Muliya Dev computer engineer and full stack developer, explore my projects here and contact me to discuss potential collaborations and projects." />
-        <meta name="keywords" content="dev, muliya, muliya dev, Dev Muliya, Dev, computer, engineer, gujarat, india, website, contact, developer, l.d. collenge, ahmedabad, profile, search, online, web, computer engineer, linkedin, instagram, portfoilo, projects, github" />
+        <meta name="description" content="I'm Dev Muliya Dev computer engineer and full stack developer, explore my projects here and contact me to discuss potential collaborations and projects." />
+        <meta name="keywords" content="dev, muliya, muliya dev, Dev Muliya, Dev, computer, software engineer, engineer, gujarat, india, website, contact, developer, l.d. collenge, ahmedabad, profile, search, online, web, computer engineer, linkedin, instagram, portfoilo, projects, github" />
         <meta name="robots" content="index, follow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
@@ -18,7 +18,7 @@ export default function Document() {
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://devmuliya.vercel.app/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Muliya Dev" />
+        <meta property="og:title" content="Dev Muliya" />
         <meta property="og:description" content="Dev Muliya Profile & Portfolio" />
         <meta property="og:image" content="https://res.cloudinary.com/dk3dupetz/image/upload/v1683987359/Portfolio/Dev_preloader_xxuziz.jpg" />
 

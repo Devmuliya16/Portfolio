@@ -62,30 +62,28 @@ export default function Home(props) {
                 onInit={(typewriter) => {
                   typewriter.typeString('✍ Hello Visitor!')
                     .pauseFor(2500)
-                    .typeString(" My name is Muliya Dev")
+                    .typeString(" My name is Dev Muliya")
                     .start();
                 }}
               />
             </span>
 
-            <motion.div className='text-xl'>I'm passionate
+            <motion.div className='text-xl'>Full stack developer
               <AnimatePresence>
                 <motion.div key={1} exit={{ x: 300 }} className='typewriter w-fit bg-blue-800/50 text-white underline drop-shadow-lg' variants={line} initial="hidden" animate="visible">
                   <Typewriter options={{ loop: true }}
                     onInit={(typewriter) => {
-                      typewriter.pauseFor(2500).typeString('Flull-stack web developer')
-                        .pauseFor(2500)
-                        .deleteAll().typeString("Flutter Developer")
-                        .pauseFor(2000).deleteAll()
-                        .typeString("DSA Learner").pauseFor(2000).deleteAll()
-                        .typeString("Computer engineering student").pauseFor(2000)
+                      typewriter.changeDelay(80).typeString('building ideas')
+                        .pauseFor(250)
+                        .deleteAll().typeString("creating solutions")
+                        .pauseFor(200).deleteAll()
+                        .typeString("making impact").pauseFor(200).deleteAll()
                         .start();
                     }}
                   />
                 </motion.div>
               </AnimatePresence>
-
-              from India.</motion.div>
+                from India.</motion.div>
             <motion.span variants={quote} initial="hidden" animate="visible" className={dancingScript.className + ` text-xl`} dangerouslySetInnerHTML={{ __html: props.data[0].h }}></motion.span>
           </div>
         </div>
@@ -100,7 +98,7 @@ export async function getServerSideProps() {
     const response = await fetch("https://zenquotes.io/api/quotes");
     data = await response.json();
   } catch (e) {
-    console.log("quote fetch error");
+    console.error("Error generating quote");
   }
 
 
