@@ -10,7 +10,7 @@ export default function Document() {
         <meta name="description" content="I'm Dev Muliya Dev computer engineer and full stack developer, explore my projects here and contact me to discuss potential collaborations and projects." />
         <meta name="keywords" content="dev, muliya, muliya dev, Dev Muliya, Dev, computer, software engineer, engineer, gujarat, india, website, contact, developer, l.d. collenge, ahmedabad, profile, search, online, web, computer engineer, linkedin, instagram, portfoilo, projects, github" />
         <meta name="robots" content="index, follow" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="revisit-after" content="2 days" />
         <meta name="author" content="Muliya dev" />

@@ -167,12 +167,22 @@ const Education = () => <div className='flex flex-row pb-10 items-center w-full'
       custom={2}
     />
   </motion.svg>
-  <motion.div variants={para_cont} whileInView="visible" initial="hidden"
+  <motion.div variants={para_cont}  whileInView="visible" initial="hidden"
     viewport={{ amount: 0.8 }}
     className={barlow.className + " flex flex-col  w-full"}>
+    
+    <motion.li variants={para_child} className='pt-6'>
+      2024 - Continue
+    </motion.li>
+    <motion.ul variants={para_child} className='bg-gray-400 p-4 rounded-lg'>
+      <u className='text-blue-800'>Software engineer</u>
+      <li>Company: Crest Data Pvt. Ltd. – India </li>
+      <li>Designation: Software engineer</li>
+      <li>Technologies: Javascript, Node, React, Android, Java</li>
+    </motion.ul>
 
     <motion.li variants={para_child} className='pt-6'>
-      2020 - continue (Pre-final year)
+      2020 - 2024
     </motion.li>
     <motion.ul variants={para_child} className='bg-gray-400 p-4 rounded-lg'>
       <u className='text-blue-800'>Bachelor's Degree</u>
@@ -180,6 +190,7 @@ const Education = () => <div className='flex flex-row pb-10 items-center w-full'
       <li>College: L.D. college of engineering - Ahmedabad</li>
       <li>Branch: Computer Science and Engineering</li>
     </motion.ul>
+
     <motion.li variants={para_child} className='pt-6'>
       2018 - 2020
     </motion.li>
