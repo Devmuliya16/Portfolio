@@ -1,0 +1,64 @@
+{
+  "personal": {
+    "name": "Dev Muliya",
+    "title": "Full Stack Developer",
+    "subtitle": "MERN Stack Developer",
+    "description": "I'm a passionate full-stack developer specializing in building exceptional digital experiences. Currently focused on creating accessible, human-centered products.",
+    "availability": "Available for opportunities",
+    "email": "devmuliya@gmail.com",
+    "location": "Gujarat, India",
+    "profileImage": "/Assets/profile.jpg",
+    "resumeLink": "/Assets/resume.pdf"
+  },
+  "social": [
+    { "name": "LinkedIn", "url": "https://linkedin.com/in/devmuliya", "icon": "linkedin" },
+    { "name": "GitHub", "url": "https://github.com/devmuliya", "icon": "github" },
+    { "name": "LeetCode", "url": "https://leetcode.com/devmuliya", "icon": "leetcode" },
+    { "name": "Telegram", "url": "https://t.me/devmuliya", "icon": "telegram" }
+  ],
+  "about": {
+    "intro": "Hello! I'm Dev, a passionate full-stack developer based in Gujarat, India. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.",
+    "description": "My journey in web development started back in 2020 when I got admission to L.D. College of Engineering. Fast-forward to today, and I've had the privilege of building multiple full-stack applications, solving 600+ DSA problems, and continuously expanding my tech stack.",
+    "currentFocus": "Currently, I'm focused on building accessible, human-centered products while learning new technologies.",
+    "traits": ["Problem Solver", "Quick Learner", "Team Player", "Detail Oriented"],
+    "stats": [
+      { "value": "600+", "label": "Problems Solved" },
+      { "value": "10+", "label": "Projects Built" },
+      { "value": "3+", "label": "Years Experience" },
+      { "value": "15+", "label": "Technologies" }
+    ]
+  },
+  "skills": {
+    "languages": [
+      { "name": "C", "icon": "/Assets/svg/clan.svg" },
+      { "name": "C++", "icon": "/Assets/svg/cpplan.svg" },
+      { "name": "Java", "icon": "/Assets/svg/javalan.svg" },
+      { "name": "Python", "icon": "/Assets/svg/pythonlan.svg" },
+      { "name": "JavaScript", "icon": "/Assets/svg/jslan.svg" },
+      { "name": "Dart", "icon": "/Assets/svg/dartlan.svg" },
+      { "name": "HTML5", "icon": "/Assets/svg/htmllan.svg" },
+      { "name": "CSS3", "icon": "/Assets/svg/csslan.svg" }
+    ],
+    "frameworks": [
+      { "name": "React.js", "icon": "/Assets/svg/reactjs.svg" },
+      { "name": "Next.js", "icon": "/Assets/svg/nextjs.svg" },
+      { "name": "Node.js", "icon": "/Assets/svg/nodejs.svg" },
+      { "name": "Express.js", "icon": "/Assets/svg/express.svg" },
+      { "name": "Flutter", "icon": "/Assets/svg/flutter.svg" },
+      { "name": "Tailwind CSS", "icon": "/Assets/svg/tailwind.svg" },
+      { "name": "Framer Motion", "icon": "/Assets/svg/framermotion.svg" }
+    ],
+    "databases & tools": [
+      { "name": "MongoDB", "icon": "/Assets/svg/mongodb.svg" },
+      { "name": "MySQL", "icon": "/Assets/svg/mysql.svg" },
+      { "name": "Firebase", "icon": "/Assets/svg/firebase.svg" },
+      { "name": "Git", "icon": "/Assets/svg/git.svg" },
+      { "name": "GitHub", "icon": "/Assets/svg/github.svg" }
+    ]
+  },
+  "seo": {
+    "title": "Dev Muliya | Full Stack Developer",
+    "description": "Full Stack Developer specializing in React, Next.js, Node.js, and MongoDB. Building exceptional digital experiences.",
+    "keywords": "Dev Muliya, Full Stack Developer, React, Next.js, Node.js, MongoDB, MERN Stack, Web Developer, Portfolio"
+  }
+}

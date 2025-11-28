@@ -1,108 +1,129 @@
-import Typewriter from 'typewriter-effect';
-import { AnimatePresence, motion } from 'framer-motion'
-import { Zilla_Slab_Highlight } from 'next/font/google';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
+import { motion } from 'framer-motion';
+import { getSiteConfig, getProjects, getJourney } from '@/lib/configReader';
+import { navSections } from '@/lib/constants';
 
-const dancingScript = Zilla_Slab_Highlight({ subsets: ['latin'], weight: "700" });
-const list = {
-  hidden: { y: -200 },
-  visible: {
-    opacity: 1, y: 0,
-    transition: {
-      when: 'beforeChildren',
-    },
-  },
+// Import all components
+import {
+  Navigation,
+  HeroSection,
+  AboutSection,
+  SkillsSection,
+  ProjectsSection,
+  JourneySection,
+  ContactSection,
+} from '@/components';
 
-}
+// Global ambient glow component
+const AmbientGlow = () => (
+  <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    {/* Top area glow */}
+    <motion.div
+      animate={{ 
+        x: [0, 50, 0],
+        y: [0, 30, 0],
+      }}
+      transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
+      className="absolute top-[20%] -left-40 w-[600px] h-[600px] bg-blue-600/15 rounded-full blur-[150px]"
+    />
+    <motion.div
+      animate={{ 
+        x: [0, -40, 0],
+        y: [0, 50, 0],
+      }}
+      transition={{ duration: 25, repeat: Infinity, ease: 'easeInOut' }}
+      className="absolute top-[30%] -right-40 w-[500px] h-[500px] bg-violet-600/10 rounded-full blur-[130px]"
+    />
+    
+    {/* Middle area glow */}
+    <motion.div
+      animate={{ 
+        x: [0, 30, 0],
+        y: [0, -40, 0],
+      }}
+      transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
+      className="absolute top-[50%] left-1/4 w-[700px] h-[700px] bg-blue-500/12 rounded-full blur-[160px]"
+    />
+    <motion.div
+      animate={{ 
+        x: [0, -50, 0],
+        y: [0, 40, 0],
+      }}
+      transition={{ duration: 22, repeat: Infinity, ease: 'easeInOut' }}
+      className="absolute top-[60%] right-1/4 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[140px]"
+    />
+    
+    {/* Bottom area glow */}
+    <motion.div
+      animate={{ 
+        x: [0, 40, 0],
+        y: [0, -30, 0],
+      }}
+      transition={{ duration: 24, repeat: Infinity, ease: 'easeInOut' }}
+      className="absolute top-[75%] -left-20 w-[550px] h-[550px] bg-violet-500/12 rounded-full blur-[150px]"
+    />
+    <motion.div
+      animate={{ 
+        x: [0, -30, 0],
+        y: [0, 50, 0],
+      }}
+      transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
+      className="absolute top-[85%] -right-32 w-[500px] h-[500px] bg-blue-600/15 rounded-full blur-[140px]"
+    />
+  </div>
+);
 
-const line = {
-  hidden: { x: 800, opacity: 0 },
-  visible: { x: 0, opacity: 1 }
-}
+export default function Home({ config, projects, journey }) {
+  const [activeSection, setActiveSection] = useState('home');
 
-const quote = {
-  hidden: {
-    y: -200,
-    opacity: 0
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      delay: 0.8
-    }
-  }
-}
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.scrollY + window.innerHeight / 3;
 
-export default function Home(props) {
+      for (const section of navSections) {
+        const el = document.getElementById(section);
+        if (el && scrollPos >= el.offsetTop && scrollPos < el.offsetTop + el.offsetHeight) {
+          setActiveSection(section);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
       <Head>
-        <title>Dev Muliya - home</title>
+        <title>{config.seo.title}</title>
+        <meta name="description" content={config.seo.description} />
+        <meta name="keywords" content={config.seo.keywords} />
       </Head>
-      <div className='cont grid grid-cols-6 grid-rows-1 overflow-hidden justify-items-stretch'>
-       
-        <div className='p-8 sm:col-start-2 col-start-1 col-span-full flex flex-col items-center overflow-hidden overflow-y-auto'>
 
-          <div className='flex flex-col space-y-6 items-start h-fit w-full m-auto'>
-
-            <motion.div
-              variants={list}
-              initial="hidden"
-              animate="visible"
-              className='text-5xl '
-            >
-              Welcome
-              <motion.div variants={line} className='border-b-4  border-blue-800 w-full'></motion.div>
-            </motion.div>
-
-            <span className='typewriter text-2xl'>
-              <Typewriter
-                onInit={(typewriter) => {
-                  typewriter.typeString('✍ Hello Visitor!')
-                    .pauseFor(2500)
-                    .typeString(" My name is Dev Muliya")
-                    .start();
-                }}
-              />
-            </span>
-
-            <motion.div className='text-xl'>Full stack developer
-              <AnimatePresence>
-                <motion.div key={1} exit={{ x: 300 }} className='typewriter w-fit bg-blue-800/50 text-white underline drop-shadow-lg' variants={line} initial="hidden" animate="visible">
-                  <Typewriter options={{ loop: true }}
-                    onInit={(typewriter) => {
-                      typewriter.changeDelay(80).typeString('building ideas')
-                        .pauseFor(250)
-                        .deleteAll().typeString("creating solutions")
-                        .pauseFor(200).deleteAll()
-                        .typeString("making impact").pauseFor(200).deleteAll()
-                        .start();
-                    }}
-                  />
-                </motion.div>
-              </AnimatePresence>
-                from India.</motion.div>
-            <motion.span variants={quote} initial="hidden" animate="visible" className={dancingScript.className + ` text-xl`} dangerouslySetInnerHTML={{ __html: props.data[0].h }}></motion.span>
-          </div>
+      <main className="bg-zinc-950 text-white min-h-screen overflow-x-hidden relative">
+        <AmbientGlow />
+        <div className="relative z-10">
+          <Navigation activeSection={activeSection} config={config} />
+          <HeroSection config={config} />
+          <AboutSection config={config} />
+          <SkillsSection config={config} />
+          <ProjectsSection projects={projects} />
+          <JourneySection journey={journey} />
+          <ContactSection config={config} />
         </div>
-      </div>
+      </main>
     </>
-  )
+  );
 }
 
-export async function getServerSideProps() {
-  var data = [{ h: "" }];
-  try {
-    const response = await fetch("https://zenquotes.io/api/quotes");
-    data = await response.json();
-  } catch (e) {
-    console.error("Error generating quote");
-  }
-
+export async function getStaticProps() {
+  const config = await getSiteConfig();
+  const projects = await getProjects();
+  const journey = await getJourney();
 
   return {
-    props: { data },
+    props: { config, projects, journey },
   };
 }
