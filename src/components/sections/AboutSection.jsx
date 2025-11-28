@@ -52,15 +52,21 @@ export default function AboutSection({ config }) {
             animate={isInView ? 'visible' : 'hidden'}
             className="space-y-8"
           >
-            {/* Image */}
+            {/* Image with overlay */}
             <motion.div whileHover={{ scale: 1.02 }} className="relative group">
-              <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 to-violet-600 rounded-2xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
-              <div className="relative aspect-square max-w-sm mx-auto rounded-2xl overflow-hidden border-2 border-zinc-800 group-hover:border-blue-600/50 transition-colors">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-violet-600/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative aspect-square max-w-sm mx-auto rounded-2xl overflow-hidden border border-zinc-800 group-hover:border-blue-600/50 transition-colors">
                 <img
                   src={config.personal.profileImage}
                   alt={config.personal.name}
                   className="w-full h-full object-cover"
                 />
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4">
+                  <p className="text-white font-semibold">{config.personal.name}</p>
+                  <p className="text-zinc-400 text-sm">{config.personal.role}</p>
+                </div>
               </div>
             </motion.div>
 
@@ -69,9 +75,9 @@ export default function AboutSection({ config }) {
               {config.about.stats.map((stat) => (
                 <div
                   key={stat.label}
-                  className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-4 text-center"
+                  className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-4 text-center hover:border-blue-600/30 transition-colors group"
                 >
-                  <p className="text-2xl font-bold text-blue-500">{stat.value}</p>
+                  <p className="text-2xl font-bold text-blue-500 group-hover:scale-110 transition-transform">{stat.value}</p>
                   <p className="text-zinc-500 text-sm">{stat.label}</p>
                 </div>
               ))}

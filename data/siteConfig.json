@@ -3,7 +3,7 @@
     "name": "Dev Muliya",
     "title": "Full Stack Developer",
     "subtitle": "MERN Stack Developer",
-    "description": "I'm a passionate full-stack developer specializing in building exceptional digital experiences. Currently focused on creating accessible, human-centered products.",
+    "description": "I'm a passionate full-stack developer specializing in building web applications, mobile apps, and scalable backend systems with modern technologies.",
     "availability": "Available for opportunities",
     "email": "devmuliya@gmail.com",
     "location": "Gujarat, India",
@@ -19,7 +19,7 @@
   "about": {
     "intro": "Hello! I'm Dev, a passionate full-stack developer based in Gujarat, India. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.",
     "description": "My journey in web development started back in 2020 when I got admission to L.D. College of Engineering. Fast-forward to today, and I've had the privilege of building multiple full-stack applications, solving 600+ DSA problems, and continuously expanding my tech stack.",
-    "currentFocus": "Currently, I'm focused on building accessible, human-centered products while learning new technologies.",
+    "currentFocus": "Currently, I'm focused on building full-stack web applications, cross-platform mobile apps, and scalable backend systems while exploring AI/ML integrations.",
     "traits": ["Problem Solver", "Quick Learner", "Team Player", "Detail Oriented"],
     "stats": [
       { "value": "600+", "label": "Problems Solved" },
