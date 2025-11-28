@@ -75,3 +75,15 @@ a:focus-visible {
 .cont {
   display: none !important;
 }
+
+/* Stroke/outline text effect */
+.stroke-text {
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.8);
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .stroke-text {
+    -webkit-text-stroke: 3px rgba(255, 255, 255, 0.8);
+  }
+}

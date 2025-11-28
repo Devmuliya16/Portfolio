@@ -20,20 +20,23 @@ export default function JourneySection({ journey }) {
           variants={fadeInUp}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="flex items-center gap-4 mb-6"
+          className="mb-16"
         >
-          <span className="text-blue-500 font-mono">04.</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white">My Journey</h2>
-          <div className="flex-1 h-px bg-zinc-800" />
+          <div className="flex items-start gap-6">
+            {/* Large number */}
+            <span className="text-6xl sm:text-7xl md:text-8xl font-black text-white/10 leading-none">
+              04
+            </span>
+            
+            {/* Title & subtitle */}
+            <div className="pt-2">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+                My Journey
+              </h2>
+              <p className="text-zinc-500 mt-2">A timeline of my growth as a developer.</p>
+            </div>
+          </div>
         </motion.div>
-        <motion.p
-          variants={fadeInUp}
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'}
-          className="text-zinc-500 mb-16"
-        >
-          A timeline of my growth as a developer.
-        </motion.p>
 
         {/* Timeline Container */}
         <div className="relative">
