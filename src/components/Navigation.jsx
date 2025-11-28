@@ -5,6 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { navSections } from '@/lib/constants';
 import { staggerContainer, staggerItem, scrollToSection } from '@/lib/animations';
 
+// Import reusable UI components
+import Logo from '@/components/ui/Logo';
+import { NavLink, MobileNavLink } from '@/components/ui/NavLink';
+import MobileMenuButton from '@/components/ui/MobileMenuButton';
+import { PrimaryButton } from '@/components/ui/Button';
+
 export default function Navigation({ activeSection, config }) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -14,6 +20,11 @@ export default function Navigation({ activeSection, config }) {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleMobileNavClick = (section) => {
+    scrollToSection(section);
+    setIsOpen(false);
+  };
 
   return (
     <>
@@ -34,65 +45,33 @@ export default function Navigation({ activeSection, config }) {
                 : 'bg-transparent'
             }`}
           >
-            <motion.span
-              whileHover={{ scale: 1.05 }}
-              className="text-xl font-bold text-white cursor-pointer"
-              onClick={() => scrollToSection('home')}
-            >
-              {config.personal.name.split(' ')[0]}
-              <span className="text-blue-500">.</span>
-            </motion.span>
+            {/* Logo */}
+            <Logo name={config.personal.name} />
 
+            {/* Nav Links */}
             <div className="flex items-center gap-1">
               {navSections.map((section) => (
-                <button
+                <NavLink
                   key={section}
-                  onClick={() => scrollToSection(section)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium capitalize transition-all duration-300 ${
-                    activeSection === section
-                      ? 'bg-blue-600 text-white'
-                      : 'text-zinc-400 hover:text-white hover:bg-zinc-800/50'
-                  }`}
-                >
-                  {section}
-                </button>
+                  section={section}
+                  isActive={activeSection === section}
+                />
               ))}
             </div>
 
-            <a
-              href={config.personal.resumeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-5 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
-            >
+            {/* Resume Button */}
+            <PrimaryButton href={config.personal.resumeLink}>
               Resume
-            </a>
+            </PrimaryButton>
           </div>
         </div>
       </motion.nav>
 
-      {/* Mobile Nav Button */}
-      <motion.button
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed top-4 right-4 z-50 w-12 h-12 bg-zinc-900 border border-zinc-800 rounded-xl flex items-center justify-center"
-      >
-        <div className="flex flex-col gap-1.5">
-          <motion.span
-            animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? 6 : 0 }}
-            className="w-5 h-0.5 bg-blue-500 block"
-          />
-          <motion.span
-            animate={{ opacity: isOpen ? 0 : 1 }}
-            className="w-5 h-0.5 bg-blue-500 block"
-          />
-          <motion.span
-            animate={{ rotate: isOpen ? -45 : 0, y: isOpen ? -6 : 0 }}
-            className="w-5 h-0.5 bg-blue-500 block"
-          />
-        </div>
-      </motion.button>
+      {/* Mobile Menu Button */}
+      <MobileMenuButton 
+        isOpen={isOpen} 
+        onClick={() => setIsOpen(!isOpen)} 
+      />
 
       {/* Mobile Menu */}
       <AnimatePresence>
@@ -110,17 +89,12 @@ export default function Navigation({ activeSection, config }) {
               className="flex flex-col gap-6 text-center"
             >
               {navSections.map((section) => (
-                <motion.button
+                <MobileNavLink
                   key={section}
+                  section={section}
                   variants={staggerItem}
-                  onClick={() => {
-                    scrollToSection(section);
-                    setIsOpen(false);
-                  }}
-                  className="text-3xl font-bold capitalize text-zinc-300 hover:text-blue-500 transition-colors"
-                >
-                  {section}
-                </motion.button>
+                  onClick={() => handleMobileNavClick(section)}
+                />
               ))}
             </motion.div>
           </motion.div>
@@ -129,6 +103,3 @@ export default function Navigation({ activeSection, config }) {
     </>
   );
 }
-
-
-

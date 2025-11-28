@@ -37,8 +37,8 @@ export default function JourneySection({ journey }) {
 
         {/* Timeline Container */}
         <div className="relative">
-          {/* Vertical Line */}
-          <div className="absolute left-[7px] md:left-1/2 md:-translate-x-[1px] top-0 bottom-0 w-[2px] bg-zinc-800">
+          {/* Vertical Line - centered with dot */}
+          <div className="absolute left-[7px] md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-[2px] bg-zinc-800">
             <motion.div
               style={{ height: lineHeight }}
               className="w-full bg-gradient-to-b from-blue-600 to-violet-600"
@@ -57,8 +57,8 @@ export default function JourneySection({ journey }) {
                 index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
               }`}
             >
-              {/* Dot */}
-              <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 top-6 z-10">
+              {/* Dot - centered on line */}
+              <div className="absolute left-[7px] md:left-1/2 -translate-x-1/2 top-6 z-10">
                 {/* Glow */}
                 <div className="absolute -inset-2 bg-blue-500/40 rounded-full blur-md" />
                 {/* Dot */}
