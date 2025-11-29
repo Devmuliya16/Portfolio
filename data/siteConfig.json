@@ -2,29 +2,37 @@
   "personal": {
     "name": "Dev Muliya",
     "title": "Full Stack Developer",
-    "subtitle": "MERN Stack Developer",
-    "description": "I'm a passionate full-stack developer specializing in building web applications, mobile apps, and scalable backend systems with modern technologies.",
+    "subtitle": "Mobile App Developer",
+    "description": "Full Stack & Mobile App Developer specializing in building scalable web applications, cross-platform mobile apps, and robust backend systems with modern technologies.",
     "availability": "Available for opportunities",
     "email": "devmuliya@gmail.com",
     "location": "Gujarat, India",
-    "profileImage": "/Assets/profile.jpg",
+    "company": "Crest Data Pvt. Ltd.",
+    "profileImage": "/Assets/profile.png",
+    "role": "Full Stack & Mobile Developer",
     "resumeLink": "/Assets/resume.pdf"
   },
   "social": [
     { "name": "LinkedIn", "url": "https://linkedin.com/in/devmuliya", "icon": "linkedin" },
     { "name": "GitHub", "url": "https://github.com/devmuliya", "icon": "github" },
-    { "name": "LeetCode", "url": "https://leetcode.com/devmuliya", "icon": "leetcode" },
+    { "name": "LeetCode", "url": "https://leetcode.com/u/Muliya_Dev", "icon": "leetcode" },
     { "name": "Telegram", "url": "https://t.me/devmuliya", "icon": "telegram" }
   ],
   "about": {
-    "intro": "Hello! I'm Dev, a passionate full-stack developer based in Gujarat, India. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.",
-    "description": "My journey in web development started back in 2020 when I got admission to L.D. College of Engineering. Fast-forward to today, and I've had the privilege of building multiple full-stack applications, solving 600+ DSA problems, and continuously expanding my tech stack.",
-    "currentFocus": "Currently, I'm focused on building full-stack web applications, cross-platform mobile apps, and scalable backend systems while exploring AI/ML integrations.",
+    "intro": "Hello! I'm Dev, a Software Engineer at Crest Data Pvt. Ltd., based in Gujarat, India. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.",
+    "description": "With a Computer Science degree from L.D. College of Engineering (2020-2024), I'm now working as a Software Engineer at Crest Data, building production-grade applications with JavaScript, Node.js, React, and Java. I've solved 600+ DSA problems and continuously expand my tech stack.",
+    "currentFocus": "Currently working as a Software Engineer at Crest Data Pvt. Ltd., building scalable web applications, mobile apps with Android/Java, and robust backend systems.",
     "traits": ["Problem Solver", "Quick Learner", "Team Player", "Detail Oriented"],
+    "education": {
+      "degree": "Bachelor's Degree in Computer Science",
+      "university": "Gujarat Technological University",
+      "college": "L.D. College of Engineering, Ahmedabad",
+      "year": "2020 - 2024"
+    },
     "stats": [
       { "value": "600+", "label": "Problems Solved" },
       { "value": "10+", "label": "Projects Built" },
-      { "value": "3+", "label": "Years Experience" },
+      { "value": "1+", "label": "Year Professional" },
       { "value": "15+", "label": "Technologies" }
     ]
   },

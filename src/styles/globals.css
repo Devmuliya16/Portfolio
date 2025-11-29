@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --foreground-rgb: 255, 255, 255;
+      --foreground-rgb: 255, 255, 255;
   --background-rgb: 9, 9, 11;
 }
 
@@ -16,7 +16,7 @@
 
 html {
   scroll-behavior: smooth;
-}
+    }
 
 body {
   font-family: 'Inter', sans-serif;
@@ -71,8 +71,7 @@ a:focus-visible {
 .desktop,
 .mobile,
 .navbtn,
-.social,
-.cont {
+.social {
   display: none !important;
 }
 
@@ -85,5 +84,5 @@ a:focus-visible {
 @media (min-width: 768px) {
   .stroke-text {
     -webkit-text-stroke: 3px rgba(255, 255, 255, 0.8);
-  }
+}
 }

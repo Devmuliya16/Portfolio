@@ -65,23 +65,10 @@ export default function AboutSection({ config }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4">
                   <p className="text-white font-semibold">{config.personal.name}</p>
-                  <p className="text-zinc-400 text-sm">{config.personal.role}</p>
+                  <p className="text-zinc-400 text-sm">{config.personal.role || config.personal.title}</p>
                 </div>
               </div>
             </motion.div>
-
-            {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-4">
-              {config.about.stats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-4 text-center hover:border-blue-600/30 transition-colors group"
-                >
-                  <p className="text-2xl font-bold text-blue-500 group-hover:scale-110 transition-transform">{stat.value}</p>
-                  <p className="text-zinc-500 text-sm">{stat.label}</p>
-                </div>
-              ))}
-            </div>
           </motion.div>
         </div>
       </div>

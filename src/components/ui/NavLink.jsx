@@ -34,3 +34,4 @@ export function MobileNavLink({ section, onClick, variants }) {
 
 export default NavLink;
 
+

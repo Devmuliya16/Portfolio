@@ -1,52 +1,61 @@
 [
     {
-        "time": "2023 - continue",
-        "expr": "Developed e-commerse project shopify",
-        "work":[
-            "Solved more than 250 data structure and algorithm problems in leetcode",
-            "Started learning Advanced java",
+        "time": "2024 - Present",
+        "expr": "Software Engineer at Crest Data Pvt. Ltd.",
+        "work": [
+            "Building production applications with JavaScript, Node.js, React",
+            "Android development with Java",
+            "Full-stack development and system design"
+        ]
+    },
+    {
+        "time": "2023",
+        "expr": "Developed e-commerce project Shopify",
+        "work": [
+            "Solved more than 600+ data structure and algorithm problems in LeetCode",
+            "Started learning Advanced Java",
             "Made my digital portfolio website"
         ]
     },
     {
-        "time":"2022 december",
-        "expr":"Developed chat webapp Talker.web as MERN stack project",
-        "work":[
-            "Started learning flutter and dart for android",
-            "Learned python libraries and jupyter notebook for datascience"
+        "time": "2022 December",
+        "expr": "Developed chat webapp Talker.web as MERN stack project",
+        "work": [
+            "Started learning Flutter and Dart for Android",
+            "Learned Python libraries and Jupyter notebook for datascience"
         ]
     },
     {
-        "time": "2022 june",
+        "time": "2022 June",
         "expr": "Became fullstack developer",
         "work": [
-            "Solved more than 350 Compititve programing problems in codechef and codeforces",
-            "Learned nosql database mongodb",
-            "Reactjs and Nextjs"
+            "Solved more than 350 Competitive programming problems in CodeChef and Codeforces",
+            "Learned NoSQL database MongoDB",
+            "React.js and Next.js"
         ]
     },
     {
-        "time":"2021 december",
-        "expr":"Explored Git and Github version control tools",
-        "work":[
-            "Learned Java and Mysql", 
-            "Made some website using rest api and venila js"
-        ]
-    },
-    {
-        "time": "2021 june",
-        "expr": "Learned Html css javascript and DSA",
+        "time": "2021 December",
+        "expr": "Explored Git and Github version control tools",
         "work": [
-            "Started Compititve programing problems in codechef and codeforces",
-            "Learned Data stuctures and stl from c++ and OOP"
+            "Learned Java and MySQL",
+            "Made some websites using REST API and vanilla JS"
         ]
     },
     {
-        "time": "2020 september",
-        "expr": "Got addmission in L.D. college of engineering.",
+        "time": "2021 June",
+        "expr": "Learned HTML, CSS, JavaScript and DSA",
         "work": [
-            "Learned first language c and c++ with stl",
-            "Explored web devlopment and compititive programing"
+            "Started Competitive programming problems in CodeChef and Codeforces",
+            "Learned Data structures and STL from C++ and OOP"
+        ]
+    },
+    {
+        "time": "2020 September",
+        "expr": "Got admission in L.D. College of Engineering",
+        "work": [
+            "Learned first language C and C++ with STL",
+            "Explored web development and competitive programming"
         ]
     }
 ]

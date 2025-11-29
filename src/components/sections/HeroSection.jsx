@@ -107,22 +107,22 @@ export default function HeroSection({ config }) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
+          className="flex items-center justify-center gap-4 mb-12"
         >
           <motion.button
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(59,130,246,0.4)' }}
             whileTap={{ scale: 0.95 }}
             onClick={() => scrollToSection('projects')}
-            className="group px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
+            className="group relative px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-sm font-medium rounded-full hover:from-blue-500 hover:to-blue-600 transition-all flex items-center gap-2 shadow-lg shadow-blue-600/25"
           >
-            View My Work
+            <span>View My Work</span>
             <HiArrowRight className="group-hover:translate-x-1 transition-transform" />
           </motion.button>
           <motion.button
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05, borderColor: 'rgba(59,130,246,0.5)' }}
             whileTap={{ scale: 0.95 }}
             onClick={() => scrollToSection('contact')}
-            className="px-8 py-4 bg-zinc-800 border border-zinc-700 text-white font-semibold rounded-xl hover:bg-zinc-700 transition-colors"
+            className="px-6 py-2.5 bg-transparent border border-zinc-600 text-zinc-300 text-sm font-medium rounded-full hover:text-white hover:border-blue-500/50 hover:bg-blue-500/10 transition-all"
           >
             Get In Touch
           </motion.button>
@@ -173,6 +173,7 @@ export default function HeroSection({ config }) {
     </section>
   );
 }
+
 
 
 
