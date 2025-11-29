@@ -7,18 +7,22 @@ export async function getSiteConfig() {
   return JSON.parse(fileContents);
 }
 
-export async function getProjects() {
-  const filePath = path.join(process.cwd(), 'data', 'projects.json');
+export async function getProjects(locale = 'en') {
+  // Try locale-specific file first, fallback to default
+  const localizedPath = path.join(process.cwd(), 'data', `projects_${locale}.json`);
+  const defaultPath = path.join(process.cwd(), 'data', 'projects.json');
+  
+  const filePath = fs.existsSync(localizedPath) ? localizedPath : defaultPath;
   const fileContents = fs.readFileSync(filePath, 'utf8');
   return JSON.parse(fileContents);
 }
 
-export async function getJourney() {
-  const filePath = path.join(process.cwd(), 'data', 'experiance.json');
+export async function getJourney(locale = 'en') {
+  // Try locale-specific file first, fallback to default
+  const localizedPath = path.join(process.cwd(), 'data', `experiance_${locale}.json`);
+  const defaultPath = path.join(process.cwd(), 'data', 'experiance.json');
+  
+  const filePath = fs.existsSync(localizedPath) ? localizedPath : defaultPath;
   const fileContents = fs.readFileSync(filePath, 'utf8');
   return JSON.parse(fileContents);
 }
-
-
-
-

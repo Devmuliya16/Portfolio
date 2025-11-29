@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "journey": "Parcours",
+    "contact": "Contact",
+    "resume": "CV"
+  },
+  "hero": {
+    "available": "Disponible pour des opportunités",
+    "viewWork": "Voir mes projets",
+    "getInTouch": "Me contacter",
+    "buildingIdeas": "Construire des idées",
+    "creatingSolutions": "Créer des solutions",
+    "description": "Développeur Full Stack & Mobile spécialisé dans la création d'applications web évolutives, d'applications mobiles multiplateformes et de systèmes backend robustes avec des technologies modernes."
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Apprenez à me connaître",
+    "intro": "Bonjour ! Je suis Dev, ingénieur logiciel chez Crest Data Pvt. Ltd., basé au Gujarat, en Inde. J'aime créer des choses qui vivent sur Internet, que ce soit des sites web, des applications ou autre chose.",
+    "description": "Diplômé en informatique du L.D. College of Engineering (2020-2024), je travaille maintenant en tant qu'ingénieur logiciel chez Crest Data, développant des applications de qualité production avec JavaScript, Node.js, React et Java. J'ai résolu plus de 600 problèmes DSA.",
+    "currentFocus": "Actuellement ingénieur logiciel chez Crest Data Pvt. Ltd., je développe des applications web évolutives, des applications mobiles Android/Java et des systèmes backend robustes.",
+    "traits": ["Résolveur de problèmes", "Apprenant rapide", "Esprit d'équipe", "Souci du détail"]
+  },
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Technologies que j'utilise",
+    "languages": "Langages",
+    "frameworks": "Frameworks",
+    "databases": "Bases de données & Outils"
+  },
+  "projects": {
+    "title": "Projets en vedette",
+    "subtitle": "Ce que j'ai construit",
+    "viewProject": "Voir le projet",
+    "viewCode": "Voir le code",
+    "liveDemo": "Démo en direct"
+  },
+  "journey": {
+    "title": "Mon parcours",
+    "subtitle": "Une chronologie de mon évolution en tant que développeur."
+  },
+  "contact": {
+    "title": "Me contacter",
+    "subtitle": "Je suis disponible pour des postes à temps plein et des projets freelance. N'hésitez pas à me contacter !",
+    "name": "Nom",
+    "email": "E-mail",
+    "message": "Message",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès !",
+    "error": "Échec de l'envoi. Veuillez réessayer.",
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "votre@email.com",
+    "messagePlaceholder": "Votre message...",
+    "available": "Disponible pour des opportunités",
+    "letsWork": "Construisons quelque chose de génial ensemble !",
+    "connectWithMe": "Me suivre",
+    "location": "Localisation"
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "builtWith": "Construit avec"
+  },
+  "projectPage": {
+    "backToProjects": "Retour aux projets",
+    "features": "Fonctionnalités",
+    "learnings": "Ce que j'ai appris",
+    "technologies": "Technologies utilisées",
+    "previousProject": "Projet précédent",
+    "nextProject": "Projet suivant"
+  }
+}
+

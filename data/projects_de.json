@@ -1,0 +1,143 @@
+[
+    {
+        "id": 1,
+        "title": "Token-Registrierung",
+        "Link": "https://token-registration.vercel.app",
+        "Links": [
+            "https://res.cloudinary.com/dk3dupetz/image/upload/v1691259683/Portfolio/tokenregsitration1.png",
+            "https://res.cloudinary.com/dk3dupetz/image/upload/v1691259683/Portfolio/tokenregsitration2.png",
+            "https://res.cloudinary.com/dk3dupetz/image/upload/v1691266924/Portfolio/tokenregsitration3.png",
+            "https://res.cloudinary.com/dk3dupetz/image/upload/v1691259683/Portfolio/tokenregsitration4.png",
+            "https://res.cloudinary.com/dk3dupetz/image/upload/v1691259683/Portfolio/tokenregsitration5.png"
+        ],
+        "para": "Willkommen auf unserer Token-Generierungs-Website, einer benutzerfreundlichen und robusten Plattform zur Optimierung von Terminprozessen in verschiedenen Abteilungen, die eine bequeme und effiziente Lösung für das Terminmanagement bietet.",
+        "image": "/Assets/projects/token3.png",
+        "about": "Online-Token-Generierungs-Website",
+        "technology": [
+            ["Assets/svg/nextjs.svg", "Next.js"],
+            ["Assets/svg/nodejs.svg", "Nodejs"],
+            ["Assets/svg/firebase.svg", "Firebase"],
+            ["Assets/svg/tailwind.svg", "Tailwind"]
+        ],
+        "Discription": [
+            "TokenGen: 🎫 Effiziente Token-Generierungsplattform",
+            "Powered by Firebase 🔥: Zuverlässige und skalierbare Datenbank",
+            "Erhalten Sie einzigartige Tokens 🆔 sofort für verschiedene Abteilungen",
+            "QR-Code-Generierung 📷 für einfache und sichere Token-Verifizierung",
+            "Benutzerfreundliche Oberfläche: Reibungslose Navigation und intuitives Design 🚀",
+            "Admin-Panel ⚙️: Verwalten Sie Tokens dynamisch 🔀",
+            "Schneller Zugriff: Generieren Sie Tokens mit wenigen Klicks 🖱️",
+            "Erhöhte Sicherheit: Jeder Token ist einzigartig und sicher gespeichert 🔐",
+            "Echtzeit-Updates: Bleiben Sie über den Token-Status informiert 🔄",
+            "Token-Ablauf: Tokens werden automatisch ungültig ⏰"
+        ],
+        "Learnings": [
+            "Token-Ablauf mit Server-Zeit",
+            "Next.js v.13",
+            "QR-Code-Generierung",
+            "Firebase"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Shopify",
+        "Link": "https://shopify-now.vercel.app/",
+        "Links": [
+            "https://res.cloudinary.com/dk3dupetz/image/upload/v1683711713/Portfolio/shopify_wchoya.png"
+        ],
+        "para": "Dieses Projekt wurde zu Lernzwecken erstellt, bei dem Benutzer sich anmelden, Produkte und deren Preise erkunden und eine Erfahrung wie bei anderen E-Commerce-Websites machen können, ihre Lieblingsartikel in den Warenkorb legen und verwalten.",
+        "image": "/Assets/projects/shopify.png",
+        "about": "Full-Stack Online-Shopping-App",
+        "technology": [
+            ["Assets/svg/nextjs.svg", "Next.js"],
+            ["Assets/svg/nodejs.svg", "Nodejs"],
+            ["Assets/svg/mongodb.svg", "Mongodb"],
+            ["Assets/svg/tailwind.svg", "Tailwind"]
+        ],
+        "Discription": [
+            "Shopify ist eine Full-Stack-Webanwendung",
+            "Entwickelt mit Nextjs und Nodejs auf MongoDB-Datenbanktechnologie",
+            "Benutzer kann ein Konto mit ✉️ E-Mail erstellen",
+            "Admin-Panel ⚙️ kann Inhalte dynamisch verwalten 🔀",
+            "Benutzer kann Produkte durch Navigation oder Suche 🔍 erkunden",
+            "Admin-Panel kann CRUD-Funktionalität für Produkte verwalten",
+            "Benutzer kann Lieblingsprodukte nach Anmeldung in den Warenkorb 🛒 legen",
+            "Admin kann alle Status sehen: Ausstehend 🔄, Versendet ➡️, Geliefert ✅",
+            "Benutzer kann Rechnung generieren 📃 und online bestellen 📌"
+        ],
+        "Learnings": [
+            "Admin-Panel-Erstellung für dynamische Verwaltung",
+            "React Chart.js Bibliothek",
+            "Next.js Routing und API-Handling",
+            "Produkt-CRUD-Operationen vom Admin-Panel"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Talker web",
+        "Link": "https://talker.onrender.com",
+        "Links": [
+            "https://res.cloudinary.com/dk3dupetz/image/upload/v1683711710/Portfolio/talker_phtrz4.png"
+        ],
+        "para": "Chatten Sie global mit allen Talker-Web-Benutzern in Echtzeit, folgen Sie ihnen um ihre täglichen Status-Updates zu sehen, teilen Sie Ihre Gefühle mit anderen, erstellen Sie Freundesgruppen um von überall und jederzeit verbunden zu bleiben...",
+        "image": "/Assets/projects/talker.png",
+        "about": "Chatten Sie global und teilen Sie Fotos",
+        "technology": [
+            ["/Assets/svg/reactjs.svg", "React.js"],
+            ["Assets/svg/nodejs.svg", "Nodejs"],
+            ["Assets/svg/mongodb.svg", "Mongodb"],
+            ["Assets/svg/cloudinary.svg", "Cloudinary"],
+            ["Assets/svg/tailwind.svg", "Tailwind"]
+        ],
+        "Discription": [
+            "Talker ist eine Full-Stack-Webanwendung",
+            "Entwickelt mit Reactjs und Nodejs auf MongoDB und Cloudinary",
+            "Benutzer kann ein Konto mit ✉️ E-Mail-OTP-Verifizierung erstellen",
+            "Konto wird 🔒 mit Nodemailer OTP 🔑 verifiziert",
+            "Benutzer kann mit anderen über persönliche Chats 💬 interagieren und Gruppen erstellen",
+            "Socket-Programmierung ermöglicht Echtzeit-Nachrichtenabruf 🚀",
+            "Benutzer kann Bilder senden und mit Emojis 😃 reagieren",
+            "Benutzer kann global 🔍 auf der Plattform suchen",
+            "Halten Sie Ihre Follower über Ihre tägliche Aktivität auf dem Laufenden 👀"
+        ],
+        "Learnings": [
+            "Benutzerverifizierung mit E-Mail und OTP",
+            "Komplexe relationale Datenbankhandhabung",
+            "Socket.io Anwendungen",
+            "UI-Design",
+            "Dateihandhabung mit CRUD-Funktionalität",
+            "Website-Optimierung mit Bundling"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "I-notebook",
+        "Link": "https://i-notebook.onrender.com",
+        "Links": [
+            "https://res.cloudinary.com/dk3dupetz/image/upload/v1683711708/Portfolio/inotebook_alis6d.png"
+        ],
+        "image": "/Assets/projects/inotebook.png",
+        "para": "I-notebook hilft Ihnen, Notizen online zu organisieren mit allen Optionen zum Erstellen, Umschreiben, Rückgängig machen und Löschen. Benutzer kann benötigte Notizen suchen und wichtige Notizen taggen um sie zu kategorisieren.",
+        "about": "Erstellen und pflegen Sie Ihre täglichen Notizen kostenlos online",
+        "technology": [
+            ["Assets/svg/reactjs.svg", "React.js"],
+            ["Assets/svg/nodejs.svg", "Nodejs"],
+            ["Assets/svg/mongodb.svg", "Mongodb"]
+        ],
+        "Discription": [
+            "I-notebook ist eine Full-Stack-Webanwendung",
+            "Entwickelt mit Reactjs und Nodejs auf MongoDB NoSQL-Technologie",
+            "Benutzer kann ein Konto mit E-Mail erstellen und die Anwendung nutzen",
+            "Das Benutzerkonto ist mit JSON-Webtoken-Authentifizierung gesichert",
+            "Benutzer kann zuvor gespeicherte Notizen löschen, ändern und umbenennen",
+            "Die Suchfunktion macht Notizen sehr einfach zu finden"
+        ],
+        "Learnings": [
+            "Erstes Mal mit React.js, JSON Webtoken und Benutzerauthentifizierung",
+            "Passwortverschlüsselung und Verifizierung des Benutzers",
+            "Cookie-Verwaltung und Datenbankhandhabung",
+            "Hosting von Full-Stack-Webanwendungen"
+        ]
+    }
+]
+

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { scrollToSection } from '@/lib/animations';
 
 // Desktop Navigation Link
-export function NavLink({ section, isActive, onClick }) {
+export function NavLink({ section, label, isActive, onClick }) {
   return (
     <button
       onClick={onClick || (() => scrollToSection(section))}
@@ -14,20 +14,20 @@ export function NavLink({ section, isActive, onClick }) {
           : 'text-zinc-400 hover:text-white hover:bg-zinc-800/50'
       }`}
     >
-      {section}
+      {label || section}
     </button>
   );
 }
 
 // Mobile Navigation Link
-export function MobileNavLink({ section, onClick, variants }) {
+export function MobileNavLink({ section, label, onClick, variants }) {
   return (
     <motion.button
       variants={variants}
       onClick={onClick}
       className="text-3xl font-bold capitalize text-zinc-300 hover:text-blue-500 transition-colors"
     >
-      {section}
+      {label || section}
     </motion.button>
   );
 }

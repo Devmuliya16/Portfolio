@@ -46,7 +46,7 @@ const OpenToWorkBadge = ({ scrollProgress }) => {
   );
 };
 
-export default function ContactSection({ config }) {
+export default function ContactSection({ config, t }) {
   const ref = useRef(null);
   const headerRef = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
@@ -68,10 +68,10 @@ export default function ContactSection({ config }) {
         body: JSON.stringify([form, {}]),
       });
       const data = await response.json();
-      alert(data.message);
+      alert(data.success ? (t?.contact?.success || 'Message sent successfully!') : (t?.contact?.error || 'Failed to send'));
       if (data.success) setForm({ name: '', email: '', message: '' });
     } catch {
-      alert('Failed to send message');
+      alert(t?.contact?.error || 'Failed to send message');
     }
     setSending(false);
   };
@@ -106,10 +106,10 @@ export default function ContactSection({ config }) {
             {/* Title & subtitle */}
             <div className="pt-2">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                Get In Touch
+                {t?.contact?.title || 'Get In Touch'}
               </h2>
               <p className="text-zinc-400 mt-2 max-w-md">
-                I&apos;m available for full-time roles & freelance projects. Feel free to reach out!
+                {t?.contact?.subtitle || "I'm available for full-time roles & freelance projects. Feel free to reach out!"}
               </p>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function ContactSection({ config }) {
               type="text"
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
-              placeholder="Your name"
+              placeholder={t?.contact?.namePlaceholder || "Your name"}
               required
               className="w-full px-4 py-3 bg-zinc-800/50 border border-zinc-700 rounded-xl text-white placeholder-zinc-500 focus:border-blue-600 outline-none transition-colors"
             />
@@ -139,14 +139,14 @@ export default function ContactSection({ config }) {
               type="email"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
-              placeholder="Your email"
+              placeholder={t?.contact?.emailPlaceholder || "Your email"}
               required
               className="w-full px-4 py-3 bg-zinc-800/50 border border-zinc-700 rounded-xl text-white placeholder-zinc-500 focus:border-blue-600 outline-none transition-colors"
             />
             <textarea
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
-              placeholder="Your message"
+              placeholder={t?.contact?.messagePlaceholder || "Your message"}
               required
               rows={4}
               className="w-full px-4 py-3 bg-zinc-800/50 border border-zinc-700 rounded-xl text-white placeholder-zinc-500 focus:border-blue-600 outline-none transition-colors resize-none"
@@ -156,9 +156,9 @@ export default function ContactSection({ config }) {
               disabled={sending}
               className="w-full py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
             >
-              {sending ? 'Sending...' : (
+              {sending ? (t?.contact?.sending || 'Sending...') : (
                 <>
-                  Send Message
+                  {t?.contact?.send || 'Send Message'}
                   <HiArrowRight />
                 </>
               )}
@@ -178,10 +178,10 @@ export default function ContactSection({ config }) {
             >
               <div className="flex items-center gap-2 mb-2">
                 <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                <span className="text-green-400 font-medium">{config.personal.availability}</span>
+                <span className="text-green-400 font-medium">{t?.contact?.available || config.personal.availability}</span>
               </div>
               <p className="text-zinc-400 text-sm">
-                Let&apos;s build something great together!
+                {t?.contact?.letsWork || "Let's build something great together!"}
               </p>
             </motion.div>
 
@@ -194,7 +194,7 @@ export default function ContactSection({ config }) {
                   <HiOutlineMail className="text-blue-500 text-xl" />
                 </div>
                 <div>
-                  <p className="text-zinc-500 text-sm">Email</p>
+                  <p className="text-zinc-500 text-sm">{t?.contact?.email || 'Email'}</p>
                   <a href={`mailto:${config.personal.email}`} className="text-white hover:text-blue-400 transition-colors">
                     {config.personal.email}
                   </a>
@@ -205,7 +205,7 @@ export default function ContactSection({ config }) {
                   <FaMapMarkerAlt className="text-blue-500" />
                 </div>
                 <div>
-                  <p className="text-zinc-500 text-sm">Location</p>
+                  <p className="text-zinc-500 text-sm">{t?.contact?.location || 'Location'}</p>
                   <p className="text-white">{config.personal.location}</p>
                 </div>
               </div>
@@ -215,7 +215,7 @@ export default function ContactSection({ config }) {
               variants={staggerItem}
               className="bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 rounded-2xl p-5"
             >
-              <h4 className="text-white font-semibold mb-4">Connect with me</h4>
+              <h4 className="text-white font-semibold mb-4">{t?.contact?.connectWithMe || 'Connect with me'}</h4>
               <div className="flex gap-3">
                 {config.social.map((item) => {
                   const Icon = socialIconMap[item.icon];
@@ -242,7 +242,7 @@ export default function ContactSection({ config }) {
       {/* Footer */}
       <div className="mt-24 text-center text-zinc-600 text-sm">
         <p>Designed & Built by {config.personal.name}</p>
-        <p className="mt-1">© {new Date().getFullYear()} All rights reserved.</p>
+        <p className="mt-1">© {new Date().getFullYear()} {t?.footer?.rights || 'All rights reserved'}.</p>
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ import SectionHeader from '@/components/ui/SectionHeader';
 import BrowserMockup from '@/components/ui/BrowserMockup';
 
 // Project Card Component
-const ProjectCard = ({ project, index, gradient, isEven }) => {
+const ProjectCard = ({ project, index, gradient, isEven, t }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 60 }}
@@ -37,7 +37,7 @@ const ProjectCard = ({ project, index, gradient, isEven }) => {
       {/* Content */}
       <div className={`${!isEven ? 'lg:col-start-1 lg:text-right' : ''}`}>
         <span className={`inline-block px-3 py-1 bg-gradient-to-r ${gradient} rounded-full text-white text-xs font-medium mb-4`}>
-          Featured Project
+          {t?.projects?.viewProject || 'Featured Project'}
         </span>
         <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">
           {project.title}
@@ -77,7 +77,7 @@ const ProjectCard = ({ project, index, gradient, isEven }) => {
             href={`/project/${index}`}
             className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white font-medium rounded-xl hover:bg-blue-700 transition-colors"
           >
-            View Details
+            {t?.projects?.viewProject || 'View Details'}
             <HiArrowRight />
           </Link>
           <a
@@ -87,7 +87,7 @@ const ProjectCard = ({ project, index, gradient, isEven }) => {
             className="inline-flex items-center gap-2 px-5 py-2.5 bg-zinc-800 border border-zinc-700 text-white font-medium rounded-xl hover:bg-zinc-700 transition-colors"
           >
             <BiLinkExternal />
-            Demo
+            {t?.projects?.liveDemo || 'Demo'}
           </a>
         </div>
       </div>
@@ -95,7 +95,7 @@ const ProjectCard = ({ project, index, gradient, isEven }) => {
   );
 };
 
-export default function ProjectsSection({ projects }) {
+export default function ProjectsSection({ projects, t }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
@@ -103,7 +103,12 @@ export default function ProjectsSection({ projects }) {
     <section id="projects" className="py-24 lg:py-32 relative">
       {/* Content */}
       <div className="relative max-w-6xl mx-auto px-6" ref={ref}>
-        <SectionHeader number="03" title="Featured Projects" isInView={isInView} />
+        <SectionHeader 
+          number="03" 
+          title={t?.projects?.title || "Featured Projects"} 
+          subtitle={t?.projects?.subtitle}
+          isInView={isInView} 
+        />
 
         {/* Projects Grid */}
         <div className="space-y-24">
@@ -114,6 +119,7 @@ export default function ProjectsSection({ projects }) {
               index={index}
               gradient={projectGradients[index % projectGradients.length]}
               isEven={index % 2 === 0}
+              t={t}
             />
           ))}
         </div>

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 import { getSiteConfig, getProjects, getJourney } from '@/lib/configReader';
+import { getTranslations } from '@/lib/getTranslations';
 import { navSections } from '@/lib/constants';
 
 // Import all components
@@ -74,7 +75,7 @@ const AmbientGlow = () => (
   </div>
 );
 
-export default function Home({ config, projects, journey }) {
+export default function Home({ config, projects, journey, t, locale }) {
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
@@ -100,30 +101,34 @@ export default function Home({ config, projects, journey }) {
         <title>{config.seo.title}</title>
         <meta name="description" content={config.seo.description} />
         <meta name="keywords" content={config.seo.keywords} />
+        <link rel="alternate" hrefLang="en" href="https://devmuliya.com" />
+        <link rel="alternate" hrefLang="fr" href="https://devmuliya.com/fr" />
+        <link rel="alternate" hrefLang="de" href="https://devmuliya.com/de" />
       </Head>
 
       <main className="bg-zinc-950 text-white min-h-screen overflow-x-hidden relative">
         <AmbientGlow />
         <div className="relative z-10">
-          <Navigation activeSection={activeSection} config={config} />
-          <HeroSection config={config} />
-          <AboutSection config={config} />
-          <SkillsSection config={config} />
-          <ProjectsSection projects={projects} />
-          <JourneySection journey={journey} />
-          <ContactSection config={config} />
+          <Navigation activeSection={activeSection} config={config} t={t} locale={locale} />
+          <HeroSection config={config} t={t} />
+          <AboutSection config={config} t={t} />
+          <SkillsSection config={config} t={t} />
+          <ProjectsSection projects={projects} t={t} />
+          <JourneySection journey={journey} t={t} />
+          <ContactSection config={config} t={t} />
         </div>
       </main>
     </>
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   const config = await getSiteConfig();
-  const projects = await getProjects();
-  const journey = await getJourney();
+  const projects = await getProjects(locale);
+  const journey = await getJourney(locale);
+  const t = getTranslations(locale);
 
   return {
-    props: { config, projects, journey },
+    props: { config, projects, journey, t, locale },
   };
 }

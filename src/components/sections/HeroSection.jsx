@@ -7,7 +7,7 @@ import Typewriter from 'typewriter-effect';
 import { socialIconMap } from '@/lib/constants';
 import { scrollToSection } from '@/lib/animations';
 
-export default function HeroSection({ config }) {
+export default function HeroSection({ config, t }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -50,7 +50,7 @@ export default function HeroSection({ config }) {
         >
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600/10 border border-blue-600/20 rounded-full text-blue-400 text-sm">
             <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-            {config.personal.availability}
+            {t?.hero?.available || config.personal.availability}
           </span>
         </motion.div>
 
@@ -81,10 +81,10 @@ export default function HeroSection({ config }) {
                 .typeString(`${config.personal.subtitle}`)
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString('Building Ideas')
+                .typeString(t?.hero?.buildingIdeas || 'Building Ideas')
                 .pauseFor(1500)
                 .deleteAll()
-                .typeString('Creating Solutions')
+                .typeString(t?.hero?.creatingSolutions || 'Creating Solutions')
                 .pauseFor(1500)
                 .deleteAll()
                 .start();
@@ -99,7 +99,7 @@ export default function HeroSection({ config }) {
           transition={{ delay: 0.5 }}
           className="text-zinc-500 text-lg max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          {config.personal.description}
+          {t?.hero?.description || config.personal.description}
         </motion.p>
 
         {/* CTAs */}
@@ -115,7 +115,7 @@ export default function HeroSection({ config }) {
             onClick={() => scrollToSection('projects')}
             className="group relative px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-sm font-medium rounded-full hover:from-blue-500 hover:to-blue-600 transition-all flex items-center gap-2 shadow-lg shadow-blue-600/25"
           >
-            <span>View My Work</span>
+            <span>{t?.hero?.viewWork || 'View My Work'}</span>
             <HiArrowRight className="group-hover:translate-x-1 transition-transform" />
           </motion.button>
           <motion.button
@@ -124,7 +124,7 @@ export default function HeroSection({ config }) {
             onClick={() => scrollToSection('contact')}
             className="px-6 py-2.5 bg-transparent border border-zinc-600 text-zinc-300 text-sm font-medium rounded-full hover:text-white hover:border-blue-500/50 hover:bg-blue-500/10 transition-all"
           >
-            Get In Touch
+            {t?.hero?.getInTouch || 'Get In Touch'}
           </motion.button>
         </motion.div>
 

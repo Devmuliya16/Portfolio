@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "journey": "Werdegang",
+    "contact": "Kontakt",
+    "resume": "Lebenslauf"
+  },
+  "hero": {
+    "available": "Offen für neue Möglichkeiten",
+    "viewWork": "Meine Arbeit ansehen",
+    "getInTouch": "Kontakt aufnehmen",
+    "buildingIdeas": "Ideen entwickeln",
+    "creatingSolutions": "Lösungen schaffen",
+    "description": "Full-Stack- und Mobile-App-Entwickler, spezialisiert auf skalierbare Webanwendungen, plattformübergreifende mobile Apps und robuste Backend-Systeme mit modernen Technologien."
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": "Lernen Sie mich kennen",
+    "intro": "Hallo! Ich bin Dev, Software-Ingenieur bei Crest Data Pvt. Ltd. in Gujarat, Indien. Ich entwickle gerne Dinge für das Internet – seien es Websites, Anwendungen oder alles dazwischen.",
+    "description": "Mit einem Informatik-Abschluss vom L.D. College of Engineering (2020-2024) arbeite ich jetzt als Software-Ingenieur bei Crest Data und entwickle produktionsreife Anwendungen mit JavaScript, Node.js, React und Java. Ich habe über 600 DSA-Probleme gelöst.",
+    "currentFocus": "Derzeit arbeite ich als Software-Ingenieur bei Crest Data Pvt. Ltd. und entwickle skalierbare Webanwendungen, Android/Java-Mobile-Apps und robuste Backend-Systeme.",
+    "traits": ["Problemlöser", "Schneller Lerner", "Teamplayer", "Detailorientiert"]
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "subtitle": "Technologien, mit denen ich arbeite",
+    "languages": "Sprachen",
+    "frameworks": "Frameworks",
+    "databases": "Datenbanken & Tools"
+  },
+  "projects": {
+    "title": "Ausgewählte Projekte",
+    "subtitle": "Was ich gebaut habe",
+    "viewProject": "Projekt ansehen",
+    "viewCode": "Code ansehen",
+    "liveDemo": "Live-Demo"
+  },
+  "journey": {
+    "title": "Mein Werdegang",
+    "subtitle": "Ein Zeitstrahl meiner Entwicklung als Entwickler."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Ich bin verfügbar für Vollzeitstellen und Freelance-Projekte. Kontaktieren Sie mich gerne!",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "success": "Nachricht erfolgreich gesendet!",
+    "error": "Senden fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "ihre@email.com",
+    "messagePlaceholder": "Ihre Nachricht...",
+    "available": "Offen für neue Möglichkeiten",
+    "letsWork": "Lassen Sie uns etwas Großartiges zusammen bauen!",
+    "connectWithMe": "Folgen Sie mir",
+    "location": "Standort"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "builtWith": "Erstellt mit"
+  },
+  "projectPage": {
+    "backToProjects": "Zurück zu Projekten",
+    "features": "Funktionen",
+    "learnings": "Was ich gelernt habe",
+    "technologies": "Verwendete Technologien",
+    "previousProject": "Vorheriges Projekt",
+    "nextProject": "Nächstes Projekt"
+  }
+}
+

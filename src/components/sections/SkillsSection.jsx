@@ -4,14 +4,25 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import SectionHeader from '@/components/ui/SectionHeader';
 
-export default function SkillsSection({ config }) {
+export default function SkillsSection({ config, t }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+
+  const categoryLabels = {
+    languages: t?.skills?.languages || 'Languages',
+    frameworks: t?.skills?.frameworks || 'Frameworks',
+    'databases & tools': t?.skills?.databases || 'Databases & Tools',
+  };
 
   return (
     <section id="skills" className="py-24 lg:py-32 relative">
       <div className="max-w-6xl mx-auto px-6" ref={ref}>
-        <SectionHeader number="02" title="Skills & Technologies" isInView={isInView} />
+        <SectionHeader 
+          number="02" 
+          title={t?.skills?.title || "Skills"} 
+          subtitle={t?.skills?.subtitle}
+          isInView={isInView} 
+        />
 
         <div className="space-y-12">
           {Object.entries(config.skills).map(([category, skills], catIndex) => (
@@ -21,7 +32,7 @@ export default function SkillsSection({ config }) {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: catIndex * 0.15 }}
             >
-              <h3 className="text-blue-400 font-medium mb-6 capitalize">{category}</h3>
+              <h3 className="text-blue-400 font-medium mb-6 capitalize">{categoryLabels[category] || category}</h3>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill, i) => (
                   <motion.div

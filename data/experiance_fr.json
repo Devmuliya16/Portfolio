@@ -1,0 +1,62 @@
+[
+    {
+        "time": "2024 - Présent",
+        "expr": "Ingénieur logiciel chez Crest Data Pvt. Ltd.",
+        "work": [
+            "Développement d'applications de production avec JavaScript, Node.js, React",
+            "Développement Android avec Java",
+            "Développement full-stack et conception de systèmes"
+        ]
+    },
+    {
+        "time": "2023",
+        "expr": "Développement du projet e-commerce Shopify",
+        "work": [
+            "Résolution de plus de 600 problèmes de structures de données et d'algorithmes sur LeetCode",
+            "Apprentissage de Java avancé",
+            "Création de mon portfolio numérique"
+        ]
+    },
+    {
+        "time": "Décembre 2022",
+        "expr": "Développement de l'application de chat Talker.web en MERN stack",
+        "work": [
+            "Apprentissage de Flutter et Dart pour Android",
+            "Apprentissage des bibliothèques Python et Jupyter notebook pour la science des données"
+        ]
+    },
+    {
+        "time": "Juin 2022",
+        "expr": "Devenu développeur fullstack",
+        "work": [
+            "Résolution de plus de 350 problèmes de programmation compétitive sur CodeChef et Codeforces",
+            "Apprentissage de la base de données NoSQL MongoDB",
+            "React.js et Next.js"
+        ]
+    },
+    {
+        "time": "Décembre 2021",
+        "expr": "Exploration des outils de contrôle de version Git et Github",
+        "work": [
+            "Apprentissage de Java et MySQL",
+            "Création de sites web utilisant REST API et vanilla JS"
+        ]
+    },
+    {
+        "time": "Juin 2021",
+        "expr": "Apprentissage de HTML, CSS, JavaScript et DSA",
+        "work": [
+            "Début de la programmation compétitive sur CodeChef et Codeforces",
+            "Apprentissage des structures de données et STL en C++ et POO"
+        ]
+    },
+    {
+        "time": "Septembre 2020",
+        "expr": "Admission au L.D. College of Engineering",
+        "work": [
+            "Apprentissage du premier langage C et C++ avec STL",
+            "Exploration du développement web et de la programmation compétitive"
+        ]
+    }
+]
+

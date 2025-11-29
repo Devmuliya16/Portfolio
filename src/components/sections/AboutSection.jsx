@@ -5,14 +5,19 @@ import { motion, useInView } from 'framer-motion';
 import { fadeInUp, staggerContainer, staggerItem } from '@/lib/animations';
 import SectionHeader from '@/components/ui/SectionHeader';
 
-export default function AboutSection({ config }) {
+export default function AboutSection({ config, t }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
     <section id="about" className="py-24 lg:py-32 relative">
       <div className="max-w-6xl mx-auto px-6" ref={ref}>
-        <SectionHeader number="01" title="About Me" isInView={isInView} />
+        <SectionHeader 
+          number="01" 
+          title={t?.about?.title || "About Me"} 
+          subtitle={t?.about?.subtitle}
+          isInView={isInView} 
+        />
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -23,20 +28,20 @@ export default function AboutSection({ config }) {
             className="space-y-6"
           >
             <motion.p variants={staggerItem} className="text-zinc-400 text-lg leading-relaxed">
-              {config.about.intro}
+              {t?.about?.intro || config.about.intro}
             </motion.p>
             <motion.p variants={staggerItem} className="text-zinc-400 leading-relaxed">
-              {config.about.description}
+              {t?.about?.description || config.about.description}
             </motion.p>
             <motion.p variants={staggerItem} className="text-blue-400">
-              {config.about.currentFocus}
+              {t?.about?.currentFocus || config.about.currentFocus}
             </motion.p>
 
             {/* Traits */}
             <motion.div variants={staggerItem} className="flex flex-wrap gap-2 pt-4">
-              {config.about.traits.map((trait) => (
+              {(t?.about?.traits || config.about.traits).map((trait, index) => (
                 <span
-                  key={trait}
+                  key={index}
                   className="px-4 py-2 bg-zinc-800/50 border border-zinc-700 rounded-lg text-sm text-zinc-300"
                 >
                   {trait}

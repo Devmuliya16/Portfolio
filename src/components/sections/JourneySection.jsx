@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { fadeInUp, timelineCardVariants } from '@/lib/animations';
 
-export default function JourneySection({ journey }) {
+export default function JourneySection({ journey, t }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   const { scrollYProgress } = useScroll({
@@ -31,9 +31,9 @@ export default function JourneySection({ journey }) {
             {/* Title & subtitle */}
             <div className="pt-2">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                My Journey
+                {t?.journey?.title || 'My Journey'}
               </h2>
-              <p className="text-zinc-500 mt-2">A timeline of my growth as a developer.</p>
+              <p className="text-zinc-500 mt-2">{t?.journey?.subtitle || 'A timeline of my growth as a developer.'}</p>
             </div>
           </div>
         </motion.div>

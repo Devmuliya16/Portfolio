@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "journey": "Journey",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "hero": {
+    "available": "Available for opportunities",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch",
+    "buildingIdeas": "Building Ideas",
+    "creatingSolutions": "Creating Solutions",
+    "description": "Full Stack & Mobile App Developer specializing in building scalable web applications, cross-platform mobile apps, and robust backend systems with modern technologies."
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know me better",
+    "intro": "Hello! I'm Dev, a Software Engineer at Crest Data Pvt. Ltd., based in Gujarat, India. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.",
+    "description": "With a Computer Science degree from L.D. College of Engineering (2020-2024), I'm now working as a Software Engineer at Crest Data, building production-grade applications with JavaScript, Node.js, React, and Java. I've solved 600+ DSA problems and continuously expand my tech stack.",
+    "currentFocus": "Currently working as a Software Engineer at Crest Data Pvt. Ltd., building scalable web applications, mobile apps with Android/Java, and robust backend systems.",
+    "traits": ["Problem Solver", "Quick Learner", "Team Player", "Detail Oriented"]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies I work with",
+    "languages": "Languages",
+    "frameworks": "Frameworks",
+    "databases": "Databases & Tools"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Some things I've built",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "liveDemo": "Live Demo"
+  },
+  "journey": {
+    "title": "My Journey",
+    "subtitle": "A timeline of my growth as a developer."
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "I'm available for full-time roles & freelance projects. Feel free to reach out!",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Your message...",
+    "available": "Available for opportunities",
+    "letsWork": "Let's build something great together!",
+    "connectWithMe": "Connect with me",
+    "location": "Location"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "builtWith": "Built with"
+  },
+  "projectPage": {
+    "backToProjects": "Back to Projects",
+    "features": "Features",
+    "learnings": "What I Learned",
+    "technologies": "Technologies Used",
+    "previousProject": "Previous Project",
+    "nextProject": "Next Project"
+  }
+}
+

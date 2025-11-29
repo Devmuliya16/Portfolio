@@ -1,0 +1,62 @@
+[
+    {
+        "time": "2024 - Heute",
+        "expr": "Software-Ingenieur bei Crest Data Pvt. Ltd.",
+        "work": [
+            "Entwicklung von Produktionsanwendungen mit JavaScript, Node.js, React",
+            "Android-Entwicklung mit Java",
+            "Full-Stack-Entwicklung und Systemdesign"
+        ]
+    },
+    {
+        "time": "2023",
+        "expr": "Entwicklung des E-Commerce-Projekts Shopify",
+        "work": [
+            "Lösung von über 600 Datenstruktur- und Algorithmus-Problemen auf LeetCode",
+            "Beginn des Lernens von fortgeschrittenem Java",
+            "Erstellung meiner digitalen Portfolio-Website"
+        ]
+    },
+    {
+        "time": "Dezember 2022",
+        "expr": "Entwicklung der Chat-Webapp Talker.web als MERN-Stack-Projekt",
+        "work": [
+            "Beginn des Lernens von Flutter und Dart für Android",
+            "Erlernen von Python-Bibliotheken und Jupyter Notebook für Data Science"
+        ]
+    },
+    {
+        "time": "Juni 2022",
+        "expr": "Fullstack-Entwickler geworden",
+        "work": [
+            "Lösung von über 350 wettbewerbsorientierten Programmieraufgaben auf CodeChef und Codeforces",
+            "Erlernen der NoSQL-Datenbank MongoDB",
+            "React.js und Next.js"
+        ]
+    },
+    {
+        "time": "Dezember 2021",
+        "expr": "Erkundung der Versionskontrolltools Git und Github",
+        "work": [
+            "Erlernen von Java und MySQL",
+            "Erstellung von Websites mit REST API und vanilla JS"
+        ]
+    },
+    {
+        "time": "Juni 2021",
+        "expr": "Erlernen von HTML, CSS, JavaScript und DSA",
+        "work": [
+            "Beginn von wettbewerbsorientiertem Programmieren auf CodeChef und Codeforces",
+            "Erlernen von Datenstrukturen und STL in C++ und OOP"
+        ]
+    },
+    {
+        "time": "September 2020",
+        "expr": "Zulassung am L.D. College of Engineering",
+        "work": [
+            "Erlernen der ersten Sprache C und C++ mit STL",
+            "Erkundung von Webentwicklung und wettbewerbsorientiertem Programmieren"
+        ]
+    }
+]
+
