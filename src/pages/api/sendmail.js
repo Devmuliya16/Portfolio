@@ -24,7 +24,10 @@ const sendmail = async (req, res) => {
   const message = getmessage(req.body,req.connection.remoteAddress);
   const info = await transporter.sendMail(message);
   if(info.accepted[0]){
-    res.setHeader('Set-Cookie', ['Access=324986321685; Max-Age=7200; Path=/']);
+    const cookieName = process.env.COOKIE_NAME || 'Access';
+    const cookieValue = process.env.COOKIE_VALUE || '324986321685';
+    const cookieMaxAge = process.env.COOKIE_MAX_AGE || '7200';
+    res.setHeader('Set-Cookie', [`${cookieName}=${cookieValue}; Max-Age=${cookieMaxAge}; Path=/`]);
     res.status(200).send({message:'message sent successfully'})
   }
   else

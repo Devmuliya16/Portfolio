@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
-import { getLocalData } from '../../lib/jsonreader2';
+import { getProjects } from '@/lib/configReader';
 import Link from "next/link";
 import { IoArrowBack, IoArrowForward, IoOpenOutline } from "react-icons/io5";
 
@@ -336,7 +336,7 @@ function ProjectPage({ data }) {
 export default ProjectPage
 
 export async function getServerSideProps() {
-    const data = await getLocalData()
+    const data = await getProjects()
     return {
         props: { data }
     }

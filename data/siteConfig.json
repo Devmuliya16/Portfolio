@@ -13,9 +13,9 @@
     "resumeLink": "/Assets/Resume2025.pdf"
   },
   "social": [
-    { "name": "LinkedIn", "url": "https://linkedin.com/in/devmuliya", "icon": "linkedin" },
-    { "name": "GitHub", "url": "https://github.com/devmuliya", "icon": "github" },
-    { "name": "LeetCode", "url": "https://leetcode.com/u/Muliya_Dev", "icon": "leetcode" },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/dev-muliya", "icon": "linkedin" },
+    { "name": "GitHub", "url": "https://github.com/Devmuliya16", "icon": "github" },
+    { "name": "LeetCode", "url": "https://leetcode.com/u/Muliya_Dev/", "icon": "leetcode" },
     { "name": "Telegram", "url": "https://t.me/devmuliya", "icon": "telegram" }
   ],
   "about": {
