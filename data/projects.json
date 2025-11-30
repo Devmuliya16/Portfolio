@@ -53,6 +53,58 @@
     },
     {
         "id": 2,
+        "title": "screenmate",
+        "Link": "https://screen-mate.onrender.com",
+        "Links": [
+            "https://res.cloudinary.com/dk3dupetz/image/upload/v1691259683/Portfolio/screenmate1.png",
+            "https://res.cloudinary.com/dk3dupetz/image/upload/v1691259683/Portfolio/screenmate2.png",
+            "https://res.cloudinary.com/dk3dupetz/image/upload/v1691259683/Portfolio/screenmate3.png",
+            "https://res.cloudinary.com/dk3dupetz/image/upload/v1691259683/Portfolio/screenmate4.png"
+        ],
+        "para": "Screen mate is movie recommendation system based on 100000+ movie dataset from kaggle tmdb and user can search for movie and get recommendation based on the movie using cosine similarity",
+        "image": "/Assets/projects/screenmate1.png",
+        "about": "Movie recommendation system",
+        "technology": [
+            [
+                "Assets/svg/sklearn.svg",
+                "Sklearn"
+            ],
+            [
+                "Assets/svg/pandas.svg",
+                "Pandas"
+            ],
+            [
+                "Assets/svg/nextjs.svg",
+                "Next.js"
+            ],
+            [
+                "Assets/svg/nodejs.svg",
+                "Nodejs"
+            ]
+           
+        ],
+        "Discription": [
+            "Screen mate is a movie 🎬 recommendation system based on a 100,000+ movie dataset",
+            "Users can search for movies and get recommendations based on their favorite titles 🍿",
+            "Based on the Kaggle TMDB 📊 dataset for comprehensive movie data",
+            "Processed raw data and extracted important features like title, genres, keywords, actors 🎭, release date using numpy and pandas",
+            "Transformed the dataset into a suitable format for the machine learning 🤖 model using sklearn",
+            "Prepared vector-related matrices and trained the model using cosine similarity ♾️",
+            "Users can search 🔍 for movies and get recommendations tailored to their interests",
+            "Designed a beautiful UI ✨ and integrated TMDB API to display recommended movies with genre, rating ⭐, release date info"
+        ],
+        "Learnings": [
+            "Sklearn",
+            "Vectorization",
+            "Machine learning",
+            "Cosine similarity",
+            "Numpy and pandas",
+            "Nextjs",
+            "Nodejs"
+        ]
+    },
+    {
+        "id": 3,
         "title": "Shopify",
         "Link": "https://shopify-now.vercel.app/",
         "Links": [
@@ -98,7 +150,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Talker web",
         "Link": "https://talker.onrender.com",
         "Links": [
@@ -150,7 +202,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "I-notebook",
         "Link": "https://i-notebook.onrender.com",
         "Links": [

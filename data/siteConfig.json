@@ -10,7 +10,7 @@
     "company": "Crest Data Pvt. Ltd.",
     "profileImage": "/Assets/profile.png",
     "role": "Full Stack & Mobile Developer",
-    "resumeLink": "/Assets/resume.pdf"
+    "resumeLink": "/Assets/Resume2025.pdf"
   },
   "social": [
     { "name": "LinkedIn", "url": "https://linkedin.com/in/devmuliya", "icon": "linkedin" },
@@ -33,35 +33,51 @@
       { "value": "600+", "label": "Problems Solved" },
       { "value": "10+", "label": "Projects Built" },
       { "value": "1+", "label": "Year Professional" },
-      { "value": "15+", "label": "Technologies" }
+      { "value": "30+", "label": "Technologies" }
     ]
   },
   "skills": {
-    "languages": [
+    "languages & scripts": [
       { "name": "C", "icon": "/Assets/svg/clan.svg" },
       { "name": "C++", "icon": "/Assets/svg/cpplan.svg" },
       { "name": "Java", "icon": "/Assets/svg/javalan.svg" },
       { "name": "Python", "icon": "/Assets/svg/pythonlan.svg" },
       { "name": "JavaScript", "icon": "/Assets/svg/jslan.svg" },
+      { "name": "TypeScript", "icon": "/Assets/svg/typescript.svg" },
       { "name": "Dart", "icon": "/Assets/svg/dartlan.svg" },
       { "name": "HTML5", "icon": "/Assets/svg/htmllan.svg" },
       { "name": "CSS3", "icon": "/Assets/svg/csslan.svg" }
     ],
     "frameworks": [
       { "name": "React.js", "icon": "/Assets/svg/reactjs.svg" },
+      { "name": "React Native", "icon": "/Assets/svg/reactnative.svg" },
       { "name": "Next.js", "icon": "/Assets/svg/nextjs.svg" },
       { "name": "Node.js", "icon": "/Assets/svg/nodejs.svg" },
       { "name": "Express.js", "icon": "/Assets/svg/express.svg" },
       { "name": "Flutter", "icon": "/Assets/svg/flutter.svg" },
+      { "name": "Socket.io", "icon": "/Assets/svg/socketio.svg" },
       { "name": "Tailwind CSS", "icon": "/Assets/svg/tailwind.svg" },
       { "name": "Framer Motion", "icon": "/Assets/svg/framermotion.svg" }
     ],
-    "databases & tools": [
+    "databases": [
       { "name": "MongoDB", "icon": "/Assets/svg/mongodb.svg" },
       { "name": "MySQL", "icon": "/Assets/svg/mysql.svg" },
-      { "name": "Firebase", "icon": "/Assets/svg/firebase.svg" },
+      { "name": "PostgreSQL", "icon": "/Assets/svg/postgres.svg" },
+      { "name": "Cassandra", "icon": "/Assets/svg/cassandra.svg" },
+      { "name": "Firebase", "icon": "/Assets/svg/firebase.svg" }
+    ],
+    "data science & ml": [
+      { "name": "Sklearn", "icon": "/Assets/svg/sklearn.svg" },
+      { "name": "Pandas", "icon": "/Assets/svg/pandas.svg" },
+      { "name": "Jupyter", "icon": "/Assets/svg/jupyter.svg" }
+    ],
+    "tools": [
       { "name": "Git", "icon": "/Assets/svg/git.svg" },
-      { "name": "GitHub", "icon": "/Assets/svg/github.svg" }
+      { "name": "GitHub", "icon": "/Assets/svg/github.svg" },
+      { "name": "Docker", "icon": "/Assets/svg/docker.svg" },
+      { "name": "Jira", "icon": "/Assets/svg/jira.svg" },
+      { "name": "Android Studio", "icon": "/Assets/svg/androidstudio.svg" },
+      { "name": "Xcode", "icon": "/Assets/svg/xcode.svg" }
     ]
   },
   "seo": {
